@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "docker": "docker build -t angular-v15 . && docker run -d -p 4200:4200 angular-v15",
     "start": "ng serve",
     "build": "ng build --configuration production  --base-href ./ && cp CNAME dist/CNAME",
     "build-prod": "ng build --configuration production",
