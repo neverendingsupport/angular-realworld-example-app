@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "docker": "docker build -t angular-v16 . && docker run -d -p 4200:4200 angular-v16",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
