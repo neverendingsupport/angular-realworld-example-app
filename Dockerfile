@@ -16,7 +16,7 @@ RUN node -v
 RUN npm -v
 
 # Install Angular CLI globally inside the container
-RUN npm install -g @angular/cli@9.1.13
+RUN npm install -g @angular/cli@8.3.29
 
 # Copy the project files into the container at /app
 COPY . .
