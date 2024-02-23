@@ -24,6 +24,9 @@ COPY . .
 # Install any needed packages specified in package.json
 RUN npm install
 
+# Build your Angular application
+RUN npm run build || exit 1
+
 # Make port 4200 available to the world outside this container
 EXPOSE 4200
 
