@@ -23,7 +23,7 @@
     "@angular/animations": "~8.2.14",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
-    "@angular/core": "~8.2.14",
+    "@angular/core": "npm:@neverendingsupport/angular@8.2.14-trial-core",
     "@angular/forms": "~8.2.14",
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
@@ -56,5 +56,8 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
+  },
+  "overrides": {
+    "@angular/core": { ".": "npm:@neverendingsupport/angular@8.2.14-trial-core" }
   }
 }
