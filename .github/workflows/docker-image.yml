@@ -17,23 +17,19 @@ jobs:
           ref: ${{ matrix.branch }}
     - name: Build the Docker image
       run: |
-        TIMESTAMP=$(date +%s)
-        docker build . --file Dockerfile --tag ${{ matrix.branch }}-$TIMESTAMP
+        docker build . --file Dockerfile --tag ${{ matrix.branch }}
     - name: Run Docker container
       run: |
-        TIMESTAMP=$(date +%s) # Re-calculate timestamp for consistency in naming
-        docker run -d -p 4200:4200 --name ${{ matrix.branch }}-$TIMESTAMP ${{ matrix.branch }}-$TIMESTAMP
+        docker run -d -p 4200:4200 --name ${{ matrix.branch }} ${{ matrix.branch }}
         sleep 10 # Give some time for the application to start
 
     - name: Check Docker container logs
       run: |
-        TIMESTAMP=$(date +%s) # Re-calculate timestamp to access the correct container logs
-        docker logs ${{ matrix.branch }}-$TIMESTAMP
+        docker logs ${{ matrix.branch }}
 
     - name: Check if Docker container is still running
       run: |
-        TIMESTAMP=$(date +%s) # Re-calculate timestamp to check the correct container status
-        if [ $(docker inspect -f {{.State.Running}} ${{ matrix.branch }}-$TIMESTAMP) = "false" ]; then
-          echo "Container ${{ matrix.branch }}-$TIMESTAMP is not running as expected"
+        if [ $(docker inspect -f {{.State.Running}} ${{ matrix.branch }}) = "false" ]; then
+          echo "Container ${{ matrix.branch }} is not running as expected"
           exit 1
         fi
