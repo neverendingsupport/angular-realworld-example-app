@@ -1,0 +1,21 @@
+name: Docker Nightly Build
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs at midnight UTC every d
+
+jobs:
+
+  docker-build:
+    runs-on: ubuntu-latest
+    strategy:
+        matrix:
+          branch: [angular-v6, angular-v7, angular-v8, angular-v8-nes, angular-v9, angular-v10, angular-v10-nes, angular-v11, angular-v11-nes, angular-v12, angular-v12-nes, angular-v13, angular-v13-nes, angular-v14, angular-v14-nes, angular-v15, angular-v15-nes, angular-v16, angular-v17.2] # Your Angular version branches
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+          ref: ${{ matrix.branch }}
+    - name: Build the Docker image
+      run: |
+        docker build . --file Dockerfile --tag my-image-name:${{ matrix.branch }}-$(date +%s)
