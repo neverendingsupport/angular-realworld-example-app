@@ -5,8 +5,8 @@ FROM python:2.7
 WORKDIR /app
 
 # Install Node.js
-# First, add the NodeSource repo for Node.js 12
-RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+# First, add the NodeSource repo for Node.js 16
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 
 # Install Node.js and npm
 RUN apt-get update && apt-get install -y nodejs
@@ -22,7 +22,10 @@ RUN npm install -g @angular/cli@10.2.1
 COPY . .
 
 # Install any needed packages specified in package.json
-RUN npm install
+RUN npm install --legacy-peer-deps
+
+### If postinstall scripts are disabled, also run the following command:
+RUN npx ngnes
 
 # Build your Angular application
 RUN npm run build || exit 1
