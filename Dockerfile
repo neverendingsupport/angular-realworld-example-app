@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Install Node.js
 # First, add the NodeSource repo for Node.js 16
-RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_16.x  | sed '/^\s*sleep/d' | bash -
 
 # Install Node.js and npm
 RUN apt-get update && apt-get install -y nodejs
