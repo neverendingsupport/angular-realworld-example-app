@@ -11,7 +11,7 @@ jobs:
     environment: production
     strategy:
         matrix:
-          branch: [angular-v6, angular-v7, angular-v8, angular-v8-nes, angular-v8-nes-trial, angular-v9, angular-v10, angular-v10-nes, angular-v10-nes-trial, angular-v11, angular-v11-nes, angular-v11-nes-trial, angular-v12, angular-v12-nes, angular-v12-nes-trial, angular-v13, angular-v13-nes, angular-v13-nes-trial, angular-v14, angular-v14-nes, angular-v14-nes-trial, angular-v15, angular-v15-nes, angular-v15-nes-trial, angular-v16, angular-v17.2] # Your Angular version branches
+          branch: [angular-v6, angular-v6-nes-trial, angular-v7, angular-v7-nes-trial, angular-v8, angular-v8-nes, angular-v8-nes-trial, angular-v9, angular-v10, angular-v10-nes, angular-v10-nes-trial, angular-v11, angular-v11-nes, angular-v11-nes-trial, angular-v12, angular-v12-nes, angular-v12-nes-trial, angular-v13, angular-v13-nes, angular-v13-nes-trial, angular-v14, angular-v14-nes, angular-v14-nes-trial, angular-v15, angular-v15-nes, angular-v15-nes-trial, angular-v16, angular-v17.2] # Your Angular version branches
         fail-fast: false # Allows all matrix jobs to run to completion
     steps:
     - uses: actions/checkout@v3
