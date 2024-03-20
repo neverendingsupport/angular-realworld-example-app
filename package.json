@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "docker": "docker build -t angular-v6 . && docker run -d -p 4200:4200 angular-v6",
+    "docker": "docker build --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v6 . && docker run -d -p 4200:4200 angular-v6",
     "start": "ng serve",
     "build": "ng build --configuration production  --base-href ./ && cp CNAME dist/CNAME",
     "build-prod": "ng build --configuration production",
@@ -23,7 +23,7 @@
     "@angular/animations": "6.1.0",
     "@angular/common": "6.1.0",
     "@angular/compiler": "6.1.0",
-    "@angular/core": "npm:@neverendingsupport/angular@6.1.10-trial-core",
+    "@angular/core": "npm:@neverendingsupport/angular@6.1.12-core",
     "@angular/forms": "6.1.0",
     "@angular/http": "6.1.0",
     "@angular/platform-browser": "6.1.0",
@@ -58,6 +58,6 @@
     "typescript": "~2.9.2"
   }, 
   "overrides": {
-    "@angular/core": { ".": "npm:@neverendingsupport/angular@6.1.10-trial-core" }
+    "@angular/core": { ".": "npm:@neverendingsupport/angular@6.1.12-core" }
   }
 }

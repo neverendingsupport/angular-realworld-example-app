@@ -32,6 +32,13 @@ RUN source $NVM_DIR/nvm.sh \
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
+# ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
+ARG NES_AUTH_TOKEN
+
+# Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
+RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
+    echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
+
 # Confirm Node.js and npm are installed
 RUN node -v
 RUN npm -v
@@ -43,7 +50,7 @@ RUN npm install -g @angular/cli@6.2.9
 COPY . .
 
 # Install any needed packages specified in package.json
-RUN npm install
+RUN npm install --verbose
 
 # Build your Angular application
 RUN npm run build || exit 1
