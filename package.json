@@ -25,6 +25,12 @@
     "@angular/platform-browser": "npm:@neverendingsupport/angular@15.2.11-platform-browser",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@15.2.11-platform-browser-dynamic",
     "@angular/router": "npm:@neverendingsupport/angular@15.2.11-router",
+    "@angular/bazel": "npm:@neverendingsupport/angular@15.2.11-bazel",
+    "@angular/elements": "npm:@neverendingsupport/angular@15.2.11-elements",
+    "@angular/localize": "npm:@neverendingsupport/angular@15.2.11-localize",
+    "@angular/platform-server": "npm:@neverendingsupport/angular@15.2.11-platform-server",
+    "@angular/service-worker": "npm:@neverendingsupport/angular@15.2.11-service-worker",
+    "@angular/upgrade": "npm:@neverendingsupport/angular@15.2.11-upgrade",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
@@ -64,6 +70,12 @@
     "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular@15.2.11-platform-browser-dynamic" },
     "@angular/router": { ".": "npm:@neverendingsupport/angular@15.2.11-router" },
     "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular@15.2.11-compiler-cli" },
-    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@15.2.11-language-service" }
+    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@15.2.11-language-service" },
+    "@angular/bazel": { ".": "npm:@neverendingsupport/angular@15.2.11-bazel" },
+    "@angular/elements": { ".": "npm:@neverendingsupport/angular@15.2.11-elements" },
+    "@angular/localize": { ".": "npm:@neverendingsupport/angular@15.2.11-localize" },
+    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@15.2.11-platform-server" },
+    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@15.2.11-service-worker" },
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@15.2.11-upgrade" }
   }
 }
