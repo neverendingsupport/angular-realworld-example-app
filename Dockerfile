@@ -9,6 +9,13 @@ WORKDIR /app
 RUN node -v
 RUN npm -v
 
+# ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
+ARG NES_AUTH_TOKEN
+
+# Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
+RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
+    echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
+
 # Install Angular CLI globally inside the container
 RUN npm install -g @angular/cli@14.2.11
 
