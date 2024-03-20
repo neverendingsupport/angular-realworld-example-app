@@ -8,6 +8,7 @@ on:
 jobs:
   docker-build-and-run:
     runs-on: ubuntu-latest
+    timeout-minutes: 15 # Set a timeout of 15 minutes for this job
     environment: production
     strategy:
         matrix:
