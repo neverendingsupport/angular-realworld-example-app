@@ -1,4 +1,4 @@
-name: Docker Build NES
+name: NES - All
 
 on:
   schedule:

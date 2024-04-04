@@ -1,4 +1,4 @@
-name: Docker Build Angular
+name: Angular - All
 
 on:
   schedule:

@@ -1,4 +1,4 @@
-name: Docker Build Angular v14 NES
+name: NES - v14
 
 on:
   workflow_dispatch:
