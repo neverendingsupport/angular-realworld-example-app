@@ -21,7 +21,7 @@ jobs:
           ref: ${{ matrix.branch }}
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag ${{ matrix.branch }}
+        docker build --no-cache . --file Dockerfile --tag ${{ matrix.branch }}
     - name: Run Docker container
       run: |
         docker run -d -p 4200:4200 --name ${{ matrix.branch }} ${{ matrix.branch }}
