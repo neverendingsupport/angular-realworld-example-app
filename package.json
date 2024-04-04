@@ -61,20 +61,53 @@
     "typescript": "4.6.4"
   },
   "overrides": {
-    "@angular/core": { ".": "npm:@neverendingsupport/angular@13.4.2-core" },
-    "@angular/animations": { ".": "npm:@neverendingsupport/angular@13.4.2-animations" },
-    "@angular/bazel": { ".": "npm:@neverendingsupport/angular@13.4.2-bazel" },
-    "@angular/common": { ".": "npm:@neverendingsupport/angular@13.4.2-common" },
-    "@angular/compiler": { ".": "npm:@neverendingsupport/angular@13.4.2-compiler" },
-    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular@13.4.2-compiler-cli" },
-    "@angular/elements": { ".": "npm:@neverendingsupport/angular@13.4.2-elements" },
-    "@angular/forms": { ".": "npm:@neverendingsupport/angular@13.4.2-forms" },
-    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@13.4.2-language-service" },
-    "@angular/localize": { ".": "npm:@neverendingsupport/angular@13.4.2-localize" },
-    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular@13.4.2-platform-browser" },
-    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular@13.4.2-platform-browser-dynamic" },
-    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@13.4.2-platform-server" },
-    "@angular/router": { ".": "npm:@neverendingsupport/angular@13.4.2-router" },
-    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@13.4.2-service-worker" },
-    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@13.4.2-upgrade" }  }
+    "@angular/core": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-core"
+    },
+    "@angular/animations": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-animations"
+    },
+    "@angular/bazel": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-bazel"
+    },
+    "@angular/common": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-common"
+    },
+    "@angular/compiler": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-compiler"
+    },
+    "@angular/compiler-cli": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-compiler-cli"
+    },
+    "@angular/elements": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-elements"
+    },
+    "@angular/forms": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-forms"
+    },
+    "@angular/language-service": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-language-service"
+    },
+    "@angular/localize": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-localize"
+    },
+    "@angular/platform-browser": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-platform-browser"
+    },
+    "@angular/platform-browser-dynamic": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-platform-browser-dynamic"
+    },
+    "@angular/platform-server": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-platform-server"
+    },
+    "@angular/router": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-router"
+    },
+    "@angular/service-worker": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-service-worker"
+    },
+    "@angular/upgrade": {
+      ".": "npm:@neverendingsupport/angular@13.4.2-upgrade"
+    }
+  }
 }
