@@ -16,6 +16,9 @@ ARG NES_AUTH_TOKEN
 RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
     echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
 
+# Clear npm cache before installation to ensure fresh packages
+RUN npm cache clean --force
+
 # Install Angular CLI globally inside the container
 RUN npm install -g @angular/cli@14.2.11
 
