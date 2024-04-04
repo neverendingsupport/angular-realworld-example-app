@@ -2,7 +2,7 @@ name: Docker Build NES Trial
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs at midnight UTC every d
+    - cron: '45 0 * * *' # Runs at 00:45 UTC every day
   workflow_dispatch:
   
 jobs:
