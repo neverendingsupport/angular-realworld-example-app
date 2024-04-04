@@ -21,7 +21,7 @@ jobs:
           ref: ${{ matrix.branch }}
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag ${{ matrix.branch }} --build-arg NES_AUTH_TOKEN=${{ secrets.NES_AUTH_TOKEN }}
+        docker build --no-cache . --file Dockerfile --tag ${{ matrix.branch }} --build-arg NES_AUTH_TOKEN=${{ secrets.NES_AUTH_TOKEN }}
     - name: Run Docker container
       run: |
         docker run -d -p 4200:4200 --name ${{ matrix.branch }} ${{ matrix.branch }}
