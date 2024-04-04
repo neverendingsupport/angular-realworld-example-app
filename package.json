@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "docker": "docker build --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v14 . && docker run -d -p 4200:4200 angular-v14",
+    "docker": "docker build --no-cache --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v14 . && docker run -d -p 4200:4200 angular-v14",
     "start": "ng serve",
     "build": "ng build --configuration production  --base-href ./ && cp CNAME dist/CNAME",
     "build-prod": "ng build --configuration production",
