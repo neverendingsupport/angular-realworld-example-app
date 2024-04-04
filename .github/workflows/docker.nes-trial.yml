@@ -1,0 +1,41 @@
+name: Docker Build NES Trial
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs at midnight UTC every d
+  workflow_dispatch:
+  
+jobs:
+  docker-build-and-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15 # Set a timeout of 15 minutes for this job
+    environment: production
+    strategy:
+        max-parallel: 3
+        matrix:
+          branch: [angular-v6-nes-trial, angular-v7-nes-trial, angular-v8-nes-trial, angular-v9-nes-trial, angular-v10-nes-trial, angular-v11-nes-trial, angular-v12-nes-trial, angular-v13-nes-trial, angular-v14-nes-trial, angular-v15-nes-trial]
+        fail-fast: false # Allows all matrix jobs to run to completion
+    steps:
+    - uses: actions/checkout@v3
+      with:
+          ref: ${{ matrix.branch }}
+    - name: Build the Docker image
+      run: |
+        docker build . --file Dockerfile --tag ${{ matrix.branch }}
+    - name: Run Docker container
+      run: |
+        docker run -d -p 4200:4200 --name ${{ matrix.branch }} ${{ matrix.branch }}
+        sleep 10 # Give some time for the application to start
+
+    - name: Check Docker container logs
+      run: |
+        docker logs ${{ matrix.branch }}
+
+    - name: Check Docker container exit status
+      run: |
+        sleep 10 # Additional wait time if needed
+        CONTAINER_EXIT_CODE=$(docker inspect ${{ matrix.branch }} --format='{{.State.ExitCode}}')
+        if [ "$CONTAINER_EXIT_CODE" != "0" ]; then
+          echo "Container exited with code $CONTAINER_EXIT_CODE"
+          exit 1
+        fi
