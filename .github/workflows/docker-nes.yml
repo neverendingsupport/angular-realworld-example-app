@@ -11,7 +11,7 @@ jobs:
     timeout-minutes: 15 # Set a timeout of 15 minutes for this job
     environment: production
     strategy:
-        max-parallel: 3
+        max-parallel: 1
         matrix:
           branch: [angular-v6-nes, angular-v7-nes, angular-v8-nes, angular-v9-nes, angular-v10-nes, angular-v11-nes, angular-v12-nes, angular-v13-nes, angular-v14-nes, angular-v15-nes]
         fail-fast: false # Allows all matrix jobs to run to completion
