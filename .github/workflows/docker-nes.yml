@@ -2,7 +2,7 @@ name: NES - All
 
 on:
   schedule:
-    - cron: '24 * * * *' # Runs hourly at 24 minutes past the hour
+    - cron: '24 0 * * *' # Runs at 00:24 UTC every day
   workflow_dispatch:
   
 jobs:
