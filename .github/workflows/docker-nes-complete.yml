@@ -1,4 +1,4 @@
-name: NES - Essentials
+name: NES - Complete
 
 on:
   schedule:
@@ -13,7 +13,7 @@ jobs:
     strategy:
         max-parallel: 1
         matrix:
-          branch: [angular-v6-nes-essentials, angular-v7-nes-essentials, angular-v8-nes-essentials, angular-v9-nes-essentials, angular-v10-nes-essentials, angular-v11-nes-essentials, angular-v12-nes-essentials, angular-v13-nes-essentials, angular-v14-nes-essentials, angular-v15-nes-essentials]
+          branch: [angular-v6-nes-complete, angular-v7-nes-complete, angular-v8-nes-complete, angular-v9-nes-complete, angular-v10-nes-complete, angular-v11-nes-complete, angular-v12-nes-complete, angular-v13-nes-complete, angular-v14-nes-complete, angular-v15-nes-complete]
         fail-fast: false # Allows all matrix jobs to run to completion
     steps:
     - uses: actions/checkout@v3
