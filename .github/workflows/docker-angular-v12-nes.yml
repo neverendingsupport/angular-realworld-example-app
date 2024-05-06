@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-          ref: angular-v12-nes
+          ref: angular-v12-nes-complete
     - name: Build the Docker image
       run: |
         docker build --no-cache . --file Dockerfile --tag angular-v12-nes --build-arg NES_AUTH_TOKEN=${{ secrets.NES_AUTH_TOKEN }}
