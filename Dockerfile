@@ -50,6 +50,8 @@ RUN npm install -g @angular/cli@9.1.13
 COPY . .
 
 # Install any needed packages specified in package.json
+RUN pwd
+RUN ls -la
 # RUN npm install --legacy-peer-deps
 RUN npm install
 
