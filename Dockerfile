@@ -51,6 +51,7 @@ COPY . .
 
 # Install any needed packages specified in package.json
 RUN pwd
+RUN export npm_config_local_prefix="."
 RUN echo $npm_config_local_prefix
 RUN echo $PWD
 RUN ls -la
