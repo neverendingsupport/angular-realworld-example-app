@@ -51,6 +51,8 @@ COPY . .
 
 # Install any needed packages specified in package.json
 RUN pwd
+RUN echo $npm_config_local_prefix
+RUN echo $PWD
 RUN ls -la
 # RUN npm install --legacy-peer-deps
 RUN npm install
