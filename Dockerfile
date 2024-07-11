@@ -11,8 +11,8 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 # update the repository sources list
 # and install dependencies
 RUN apt-get update \
-    && apt-get install -y curl \
-    && apt-get -y autoclean
+  && apt-get install -y curl \
+  && apt-get -y autoclean
 
 # nvm environment variables
 ENV NVM_DIR /usr/local/nvm
@@ -24,9 +24,9 @@ RUN curl --silent -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/i
 
 # install node and npm
 RUN source $NVM_DIR/nvm.sh \
-    && nvm install $NODE_VERSION \
-    && nvm alias default $NODE_VERSION \
-    && nvm use default
+  && nvm install $NODE_VERSION \
+  && nvm alias default $NODE_VERSION \
+  && nvm use default
 
 # add node and npm to path so the commands are available
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
@@ -37,8 +37,8 @@ ARG NES_AUTH_TOKEN
 
 # Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
 RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
-    echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
-    
+  echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
+
 # Confirm Node.js and npm are installed
 RUN node -v
 RUN npm -v
@@ -50,10 +50,11 @@ RUN npm install -g @angular/cli@9.1.13
 COPY . .
 
 # Install any needed packages specified in package.json
-RUN npm install --legacy-peer-deps
+# RUN npm install --legacy-peer-deps
+RUN npm install
 
 ### If postinstall scripts are disabled, also run the following command:
-RUN npx ngnes
+# RUN npx ngnes
 
 # Build your Angular application
 RUN npm run build || exit 1
