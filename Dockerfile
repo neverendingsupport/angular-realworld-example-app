@@ -31,6 +31,7 @@ RUN source $NVM_DIR/nvm.sh \
 # add node and npm to path so the commands are available
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
+ENV npm_config_local_prefix="."
 
 # ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
 ARG NES_AUTH_TOKEN
@@ -50,11 +51,7 @@ RUN npm install -g @angular/cli@9.1.13
 COPY . .
 
 # Install any needed packages specified in package.json
-RUN pwd
-RUN export npm_config_local_prefix="."
 RUN echo $npm_config_local_prefix
-RUN echo $PWD
-RUN ls -la
 # RUN npm install --legacy-peer-deps
 RUN npm install
 
