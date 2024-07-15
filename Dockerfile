@@ -31,7 +31,8 @@ RUN source $NVM_DIR/nvm.sh \
 # add node and npm to path so the commands are available
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
-ENV npm_config_local_prefix="."
+ENV NES_NPM_CONFIG_LOCAL_PREFIX="./"
+ENV DEBUG=true
 
 # ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
 ARG NES_AUTH_TOKEN
