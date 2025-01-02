@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "postinstall": "npx ngnes",
     "ng": "ng",
-    "docker": "docker build -t angular-v16 . && docker run -d -p 4200:4200 angular-v16",
+    "docker": "docker build --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v16 . && docker run -d -p 4200:4200 angular-v16",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -16,14 +17,19 @@
   },
   "private": true,
   "dependencies": {
+    "@neverendingsupport/angular-tools": "1.1.3",
     "@angular/animations": "16.2.11",
     "@angular/common": "16.2.11",
     "@angular/compiler": "16.2.11",
-    "@angular/core": "16.2.11",
+    "@angular/core": "npm:@neverendingsupport/angular@16.2.12-core-angular",
     "@angular/forms": "16.2.11",
     "@angular/platform-browser": "16.2.11",
     "@angular/platform-browser-dynamic": "16.2.11",
     "@angular/router": "16.2.11",
+    "@angular/elements": "16.2.11",
+    "@angular/localize": "16.2.11",
+    "@angular/platform-server": "16.2.11",
+    "@angular/service-worker": "16.2.11",
     "@rx-angular/cdk": "^16.0.0",
     "@rx-angular/template": "^16.0.0",
     "marked": "^4.2.12",
@@ -47,6 +53,11 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "typescript": "~5.1.6"
+  },
+  "overrides": {
+    "@angular/core": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-core-angular"
+    }
   },
   "lint-staged": {
     "*.{ts,html,css,json,md}": "prettier --write"
