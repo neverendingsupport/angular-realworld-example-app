@@ -18,18 +18,19 @@
   "private": true,
   "dependencies": {
     "@neverendingsupport/angular-tools": "1.1.3",
-    "@angular/animations": "16.2.11",
-    "@angular/common": "16.2.11",
-    "@angular/compiler": "16.2.11",
+    "@angular/animations": "npm:@neverendingsupport/angular@16.2.12-animations-angular",
+    "@angular/common": "npm:@neverendingsupport/angular@16.2.12-common-angular",
+    "@angular/compiler": "npm:@neverendingsupport/angular@16.2.12-compiler-angular",
     "@angular/core": "npm:@neverendingsupport/angular@16.2.12-core-angular",
-    "@angular/forms": "16.2.11",
-    "@angular/platform-browser": "16.2.11",
-    "@angular/platform-browser-dynamic": "16.2.11",
-    "@angular/router": "16.2.11",
-    "@angular/elements": "16.2.11",
-    "@angular/localize": "16.2.11",
-    "@angular/platform-server": "16.2.11",
-    "@angular/service-worker": "16.2.11",
+    "@angular/elements": "npm:@neverendingsupport/angular@16.2.12-elements-angular",
+    "@angular/forms": "npm:@neverendingsupport/angular@16.2.12-forms-angular",
+    "@angular/localize": "npm:@neverendingsupport/angular@16.2.12-localize-angular",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular@16.2.12-platform-browser-angular",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@16.2.12-platform-browser-dynamic-angular",
+    "@angular/platform-server": "npm:@neverendingsupport/angular@16.2.12-platform-server-angular",
+    "@angular/router": "npm:@neverendingsupport/angular@16.2.12-router-angular",
+    "@angular/service-worker": "npm:@neverendingsupport/angular@16.2.12-service-worker-angular",
+    "@angular/upgrade": "npm:@neverendingsupport/angular@16.2.12-upgrade-angular",
     "@rx-angular/cdk": "^16.0.0",
     "@rx-angular/template": "^16.0.0",
     "marked": "^4.2.12",
@@ -38,9 +39,10 @@
     "zone.js": "~0.13.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.2.8",
-    "@angular/cli": "^16.2.8",
-    "@angular/compiler-cli": "16.2.11",
+    "@angular-devkit/build-angular": "^16.2.11",
+    "@angular/cli": "^16.2.11",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular@16.2.12-compiler-cli-angular",
+    "@angular/language-service": "npm:@neverendingsupport/angular@16.2.12-language-service-angular",
     "@types/jasmine": "~4.3.0",
     "@types/marked": "^4.0.8",
     "husky": "^8.0.3",
@@ -55,8 +57,50 @@
     "typescript": "~5.1.6"
   },
   "overrides": {
+    "@angular/animations": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-animations-angular"
+    },
+    "@angular/common": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-common-angular"
+    },
+    "@angular/compiler": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-compiler-angular"
+    },
+    "@angular/compiler-cli": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-compiler-cli-angular"
+    },
     "@angular/core": {
       ".": "npm:@neverendingsupport/angular@16.2.12-core-angular"
+    },
+    "@angular/elements": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-elements-angular"
+    },
+    "@angular/forms": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-forms-angular"
+    },
+    "@angular/language-service": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-language-service-angular"
+    },
+    "@angular/localize": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-localize-angular"
+    },
+    "@angular/platform-browser": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-angular"
+    },
+    "@angular/platform-browser-dynamic": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-dynamic-angular"
+    },
+    "@angular/platform-server": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-platform-server-angular"
+    },
+    "@angular/router": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-router-angular"
+    },
+    "@angular/service-worker": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-service-worker-angular"
+    },
+    "@angular/upgrade": {
+      ".": "npm:@neverendingsupport/angular@16.2.12-upgrade-angular"
     }
   },
   "lint-staged": {
