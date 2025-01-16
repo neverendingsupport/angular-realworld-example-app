@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 import { Profile, ProfilesService, UserService } from '../../core';
 import { concatMap ,  tap } from 'rxjs/operators';
-import { of } from 'rxjs';
+import { of } from 'rxjs/observable/of';
 
 @Component({
   selector: 'app-follow-button',

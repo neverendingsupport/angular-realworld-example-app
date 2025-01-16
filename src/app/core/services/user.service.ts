@@ -7,7 +7,7 @@ import { User } from '../models';
 import { map ,  distinctUntilChanged } from 'rxjs/operators';
 
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class UserService {
   private currentUserSubject = new BehaviorSubject<User>({} as User);
   public currentUser = this.currentUserSubject.asObservable().pipe(distinctUntilChanged());
