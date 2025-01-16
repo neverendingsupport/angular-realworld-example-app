@@ -6,7 +6,7 @@ import { ApiService } from './api.service';
 import { Article, ArticleListConfig } from '../models';
 import { map } from 'rxjs/operators';
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class ArticlesService {
   constructor (
     private apiService: ApiService
@@ -21,16 +21,21 @@ export class ArticlesService {
       params[key] = config.filters[key];
     });
 
+    let httpParams = new HttpParams();
+
+    for (const key of Object.keys(params)) {
+      httpParams = httpParams.set(key, params[key]);
+    }
+
     return this.apiService
     .get(
       '/articles' + ((config.type === 'feed') ? '/feed' : ''),
-      new HttpParams({ fromObject: params })
+      httpParams
     );
   }
 
   get(slug): Observable<Article> {
-    return this.apiService.get('/articles/' + slug)
-      .pipe(map(data => data.article));
+    return this.apiService.get('/articles/' + slug);
   }
 
   destroy(slug) {
@@ -40,13 +45,11 @@ export class ArticlesService {
   save(article): Observable<Article> {
     // If we're updating an existing article
     if (article.slug) {
-      return this.apiService.put('/articles/' + article.slug, {article: article})
-        .pipe(map(data => data.article));
+      return this.apiService.put('/articles/' + article.slug, {article: article});
 
     // Otherwise, create a new article
     } else {
-      return this.apiService.post('/articles/', {article: article})
-        .pipe(map(data => data.article));
+      return this.apiService.post('/articles/', {article: article});
     }
   }
 

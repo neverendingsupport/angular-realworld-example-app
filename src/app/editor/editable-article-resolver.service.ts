@@ -21,7 +21,7 @@ export class EditableArticleResolver implements Resolve<Article> {
     return this.articlesService.get(route.params['slug'])
       .pipe(
         map(
-          article => {
+          (article: Article) => {
             if (this.userService.getCurrentUser().username === article.author.username) {
               return article;
             } else {

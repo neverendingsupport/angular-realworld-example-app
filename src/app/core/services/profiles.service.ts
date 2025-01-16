@@ -5,7 +5,7 @@ import { ApiService } from './api.service';
 import { Profile } from '../models';
 import { map } from 'rxjs/operators';
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class ProfilesService {
   constructor (
     private apiService: ApiService

@@ -7,7 +7,7 @@ import { User } from '../models';
 import { map ,  distinctUntilChanged } from 'rxjs/operators';
 
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class UserService {
   private currentUserSubject = new BehaviorSubject<User>({} as User);
   public currentUser = this.currentUserSubject.asObservable().pipe(distinctUntilChanged());
@@ -58,9 +58,9 @@ export class UserService {
     const route = (type === 'login') ? '/login' : '';
     return this.apiService.post('/users' + route, {user: credentials})
       .pipe(map(
-      data => {
-        this.setAuth(data.user);
-        return data;
+      (user: User) => {
+        this.setAuth(user);
+        return user;
       }
     ));
   }
@@ -73,10 +73,10 @@ export class UserService {
   update(user): Observable<User> {
     return this.apiService
     .put('/user', { user })
-    .pipe(map(data => {
+    .pipe(map((user: User) => {
       // Update the currentUser observable
-      this.currentUserSubject.next(data.user);
-      return data.user;
+      this.currentUserSubject.next(user);
+      return user;
     }));
   }
 

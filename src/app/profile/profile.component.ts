@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { User, UserService, Profile } from '../core';
+import { User, UserService, Profile, Article } from '../core';
 import { map, switchMap } from 'rxjs/operators';
 
 @Component({
@@ -20,7 +20,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
     this.route.data.pipe(
-      map(data => data.profile),
+      map((data: Article) => data.author),
       switchMap((profile: Profile) => {
         this.profile = profile;
 
