@@ -17,20 +17,20 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "npm:@neverendingsupport/angular@13.4.2-animations",
-    "@angular/common": "npm:@neverendingsupport/angular@13.4.2-common",
-    "@angular/compiler": "npm:@neverendingsupport/angular@13.4.2-compiler",
-    "@angular/core": "npm:@neverendingsupport/angular@13.4.2-core",
-    "@angular/forms": "npm:@neverendingsupport/angular@13.4.2-forms",
-    "@angular/platform-browser": "npm:@neverendingsupport/angular@13.4.2-platform-browser",
-    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@13.4.2-platform-browser-dynamic",
-    "@angular/router": "npm:@neverendingsupport/angular@13.4.2-router",
-    "@angular/bazel": "npm:@neverendingsupport/angular@13.4.2-bazel",
-    "@angular/elements": "npm:@neverendingsupport/angular@13.4.2-elements",
-    "@angular/localize": "npm:@neverendingsupport/angular@13.4.2-localize",
-    "@angular/platform-server": "npm:@neverendingsupport/angular@13.4.2-platform-server",
-    "@angular/service-worker": "npm:@neverendingsupport/angular@13.4.2-service-worker",
-    "@angular/upgrade": "npm:@neverendingsupport/angular@13.4.2-upgrade",
+    "@angular/animations": "npm:@neverendingsupport/angular@13.4.0-animations-13.4.3",
+    "@angular/bazel": "npm:@neverendingsupport/angular@13.4.0-bazel-13.4.3",
+    "@angular/common": "npm:@neverendingsupport/angular@13.4.0-common-13.4.3",
+    "@angular/compiler": "npm:@neverendingsupport/angular@13.4.0-compiler-13.4.3",
+    "@angular/core": "npm:@neverendingsupport/angular@13.4.0-core-13.4.3",
+    "@angular/elements": "npm:@neverendingsupport/angular@13.4.0-elements-13.4.3",
+    "@angular/forms": "npm:@neverendingsupport/angular@13.4.0-forms-13.4.3",
+    "@angular/localize": "npm:@neverendingsupport/angular@13.4.0-localize-13.4.3",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular@13.4.0-platform-browser-13.4.3",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@13.4.0-platform-browser-dynamic-13.4.3",
+    "@angular/platform-server": "npm:@neverendingsupport/angular@13.4.0-platform-server-13.4.3",
+    "@angular/router": "npm:@neverendingsupport/angular@13.4.0-router-13.4.3",
+    "@angular/service-worker": "npm:@neverendingsupport/angular@13.4.0-service-worker-13.4.3",
+    "@angular/upgrade": "npm:@neverendingsupport/angular@13.4.0-upgrade-13.4.3",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
@@ -40,14 +40,14 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.3.11",
     "@angular/cli": "^13.3.11",
-    "@angular/compiler-cli": "npm:@neverendingsupport/angular@13.4.2-compiler-cli",
-    "@angular/language-service": "npm:@neverendingsupport/angular@13.4.2-language-service",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular@13.4.0-compiler-cli-13.4.3",
+    "@angular/language-service": "npm:@neverendingsupport/angular@13.4.0-language-service-13.4.3",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.2",
     "@types/marked": "^4.0.8",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.1",
-    "jasmine-core": "~3.6.0",
+    "jasmine-core": "~3.8.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.1",
     "karma-chrome-launcher": "~3.1.0",
@@ -61,53 +61,53 @@
     "typescript": "4.6.4"
   },
   "overrides": {
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-core"
-    },
     "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-animations"
+      ".": "npm:@neverendingsupport/angular@13.4.0-animations-13.4.3"
     },
     "@angular/bazel": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-bazel"
+      ".": "npm:@neverendingsupport/angular@13.4.0-bazel-13.4.3"
     },
     "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-common"
+      ".": "npm:@neverendingsupport/angular@13.4.0-common-13.4.3"
     },
     "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-compiler"
+      ".": "npm:@neverendingsupport/angular@13.4.0-compiler-13.4.3"
     },
     "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-compiler-cli"
+      ".": "npm:@neverendingsupport/angular@13.4.0-compiler-cli-13.4.3"
+    },
+    "@angular/core": {
+      ".": "npm:@neverendingsupport/angular@13.4.0-core-13.4.3"
     },
     "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-elements"
+      ".": "npm:@neverendingsupport/angular@13.4.0-elements-13.4.3"
     },
     "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-forms"
+      ".": "npm:@neverendingsupport/angular@13.4.0-forms-13.4.3"
     },
     "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-language-service"
+      ".": "npm:@neverendingsupport/angular@13.4.0-language-service-13.4.3"
     },
     "@angular/localize": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-localize"
+      ".": "npm:@neverendingsupport/angular@13.4.0-localize-13.4.3"
     },
     "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-platform-browser"
+      ".": "npm:@neverendingsupport/angular@13.4.0-platform-browser-13.4.3"
     },
     "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-platform-browser-dynamic"
+      ".": "npm:@neverendingsupport/angular@13.4.0-platform-browser-dynamic-13.4.3"
     },
     "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-platform-server"
+      ".": "npm:@neverendingsupport/angular@13.4.0-platform-server-13.4.3"
     },
     "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-router"
+      ".": "npm:@neverendingsupport/angular@13.4.0-router-13.4.3"
     },
     "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-service-worker"
+      ".": "npm:@neverendingsupport/angular@13.4.0-service-worker-13.4.3"
     },
     "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@13.4.2-upgrade"
+      ".": "npm:@neverendingsupport/angular@13.4.0-upgrade-13.4.3"
     }
   }
 }
