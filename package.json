@@ -18,17 +18,17 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "npm:@neverendingsupport/angular@14.3.0-animations-14.3.5",
+    "@angular/bazel": "npm:@neverendingsupport/angular@14.3.0-bazel-14.3.5",
     "@angular/common": "npm:@neverendingsupport/angular@14.3.0-common-14.3.5",
     "@angular/compiler": "npm:@neverendingsupport/angular@14.3.0-compiler-14.3.5",
     "@angular/core": "npm:@neverendingsupport/angular@14.3.0-core-14.3.5",
+    "@angular/elements": "npm:@neverendingsupport/angular@14.3.0-elements-14.3.5",
     "@angular/forms": "npm:@neverendingsupport/angular@14.3.0-forms-14.3.5",
+    "@angular/localize": "npm:@neverendingsupport/angular@14.3.0-localize-14.3.5",
     "@angular/platform-browser": "npm:@neverendingsupport/angular@14.3.0-platform-browser-14.3.5",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@14.3.0-platform-browser-dynamic-14.3.5",
-    "@angular/router": "npm:@neverendingsupport/angular@14.3.0-router-14.3.5",
-    "@angular/bazel": "npm:@neverendingsupport/angular@14.3.0-bazel-14.3.5",
-    "@angular/elements": "npm:@neverendingsupport/angular@14.3.0-elements-14.3.5",
-    "@angular/localize": "npm:@neverendingsupport/angular@14.3.0-localize-14.3.5",
     "@angular/platform-server": "npm:@neverendingsupport/angular@14.3.0-platform-server-14.3.5",
+    "@angular/router": "npm:@neverendingsupport/angular@14.3.0-router-14.3.5",
     "@angular/service-worker": "npm:@neverendingsupport/angular@14.3.0-service-worker-14.3.5",
     "@angular/upgrade": "npm:@neverendingsupport/angular@14.3.0-upgrade-14.3.5",
     "core-js": "^2.4.1",
@@ -38,16 +38,19 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.2.11",
-    "@angular/cli": "^14.2.11",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@14.3.0-compiler-cli-14.3.5",
     "@angular/language-service": "npm:@neverendingsupport/angular@14.3.0-language-service-14.3.5",
+    "@angular/cli": "npm:@neverendingsupport/angular-cli@14.2.13-cli-14.2.14",
+    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@14.2.13-architect-14.2.14",
+    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@14.2.13-build-webpack-14.2.14",
+    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@14.2.13-core-14.2.14",
+    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@14.2.13-schematics-14.2.14",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.2",
     "@types/marked": "^4.0.8",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.1",
-    "jasmine-core": "~3.6.0",
+    "jasmine-core": "~3.8.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.1",
     "karma-chrome-launcher": "~3.1.0",
@@ -61,9 +64,6 @@
     "typescript": "4.6.4"
   },
   "overrides": {
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@14.3.0-core-14.3.5"
-    },
     "@angular/animations": {
       ".": "npm:@neverendingsupport/angular@14.3.0-animations-14.3.5"
     },
@@ -78,6 +78,9 @@
     },
     "@angular/compiler-cli": {
       ".": "npm:@neverendingsupport/angular@14.3.0-compiler-cli-14.3.5"
+    },
+    "@angular/core": {
+      ".": "npm:@neverendingsupport/angular@14.3.0-core-14.3.5"
     },
     "@angular/elements": {
       ".": "npm:@neverendingsupport/angular@14.3.0-elements-14.3.5"
@@ -108,6 +111,11 @@
     },
     "@angular/upgrade": {
       ".": "npm:@neverendingsupport/angular@14.3.0-upgrade-14.3.5"
-    }
+    },
+    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@14.2.13-cli-14.2.14"},
+    "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-cli@14.2.13-architect-14.2.14"},
+    "@angular-devkit/build-webpack": { ".": "npm:@neverendingsupport/angular-cli@14.2.13-build-webpack-14.2.14"},
+    "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-cli@14.2.13-core-14.2.14"},
+    "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-cli@14.2.13-schematics-14.2.14"}
   }
 }
