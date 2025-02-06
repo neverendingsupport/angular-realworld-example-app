@@ -20,20 +20,22 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "npm:@neverendingsupport/angular@6.1.10-animations-6.1.14",
-    "@angular/common": "npm:@neverendingsupport/angular@6.1.10-common-6.1.14",
-    "@angular/compiler": "npm:@neverendingsupport/angular@6.1.10-compiler-6.1.14",
-    "@angular/core": "npm:@neverendingsupport/angular@6.1.10-core-6.1.14",
-    "@angular/forms": "npm:@neverendingsupport/angular@6.1.10-forms-6.1.14",
-    "@angular/http": "npm:@neverendingsupport/angular@6.1.10-http-6.1.14",
-    "@angular/platform-browser": "npm:@neverendingsupport/angular@6.1.10-platform-browser-6.1.14",
-    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@6.1.10-platform-browser-dynamic-6.1.14",
-    "@angular/platform-server": "npm:@neverendingsupport/angular@6.1.10-platform-server-6.1.14",
-    "@angular/platform-webworker": "npm:@neverendingsupport/angular@6.1.10-platform-webworker-6.1.14",
-    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular@6.1.10-platform-webworker-dynamic-6.1.14",
-    "@angular/router": "npm:@neverendingsupport/angular@6.1.10-router-6.1.14",
-    "@angular/service-worker": "npm:@neverendingsupport/angular@6.1.10-service-worker-6.1.14",
-    "@angular/upgrade": "npm:@neverendingsupport/angular@6.1.10-upgrade-6.1.14",
+    "@angular/animations": "npm:@neverendingsupport/angular@6.1.10-animations-6.1.15",
+    "@angular/common": "npm:@neverendingsupport/angular@6.1.10-common-6.1.15",
+    "@angular/compiler": "npm:@neverendingsupport/angular@6.1.10-compiler-6.1.15",
+    "@angular/core": "npm:@neverendingsupport/angular@6.1.10-core-6.1.15",
+    "@angular/forms": "npm:@neverendingsupport/angular@6.1.10-forms-6.1.15",
+    "@angular/elements": "npm:@neverendingsupport/angular@6.1.10-elements-6.1.15",
+    "@angular/http": "npm:@neverendingsupport/angular@6.1.10-http-6.1.15",
+    "@angular/language-service": "npm:@neverendingsupport/angular@6.1.10-language-service-6.1.15",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular@6.1.10-platform-browser-6.1.15",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@6.1.10-platform-browser-dynamic-6.1.15",
+    "@angular/platform-server": "npm:@neverendingsupport/angular@6.1.10-platform-server-6.1.15",
+    "@angular/platform-webworker": "npm:@neverendingsupport/angular@6.1.10-platform-webworker-6.1.15",
+    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular@6.1.10-platform-webworker-dynamic-6.1.15",
+    "@angular/router": "npm:@neverendingsupport/angular@6.1.10-router-6.1.15",
+    "@angular/service-worker": "npm:@neverendingsupport/angular@6.1.10-service-worker-6.1.15",
+    "@angular/upgrade": "npm:@neverendingsupport/angular@6.1.10-upgrade-6.1.15",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
     "rxjs": "~6.2.0",
@@ -41,7 +43,7 @@
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "npm:@neverendingsupport/angular@6.1.10-compiler-cli-6.1.14",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular@6.1.10-compiler-cli-6.1.15",
     "@angular/cli": "npm:@neverendingsupport/angular-cli@6.2.9-cli-6.2.11",
     "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@6.2.9-architect-6.2.11",
     "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@6.2.9-build-angular-6.2.11",
@@ -70,49 +72,55 @@
   },
   "overrides": {
     "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-animations-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-animations-6.1.15"
     },
     "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-common-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-common-6.1.15"
     },
     "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-compiler-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-compiler-6.1.15"
     },
     "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-compiler-cli-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-compiler-cli-6.1.15"
     },
     "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-core-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-core-6.1.15"
     },
     "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-forms-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-forms-6.1.15"
+    },
+    "@angular/elements": {
+      ".": "npm:@neverendingsupport/angular@6.1.10-elements-6.1.15"
     },
     "@angular/http": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-http-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-http-6.1.15"
+    },
+    "@angular/language-service": {
+      ".": "npm:@neverendingsupport/angular@6.1.10-language-service-6.1.15"
     },
     "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-platform-browser-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-platform-browser-6.1.15"
     },
     "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-platform-browser-dynamic-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-platform-browser-dynamic-6.1.15"
     },
     "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-platform-server-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-platform-server-6.1.15"
     },
     "@angular/platform-webworker": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-platform-webworker-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-platform-webworker-6.1.15"
     },
     "@angular/platform-webworker-dynamic": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-platform-webworker-dynamic-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-platform-webworker-dynamic-6.1.15"
     },
     "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-router-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-router-6.1.15"
     },
     "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-service-worker-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-service-worker-6.1.15"
     },
     "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@6.1.10-upgrade-6.1.14"
+      ".": "npm:@neverendingsupport/angular@6.1.10-upgrade-6.1.15"
     },
     "@angular/cli": {
       ".": "npm:@neverendingsupport/angular-cli@6.2.9-cli-6.2.11"
