@@ -23,7 +23,7 @@
     "@angular/animations": "6.1.10",
     "@angular/common": "6.1.10",
     "@angular/compiler": "6.1.10",
-    "@angular/core": "npm:@neverendingsupport/angular@6.1.10-core-6.1.14",
+    "@angular/core": "npm:@neverendingsupport/angular@6.1.10-core-6.1.15",
     "@angular/forms": "6.1.10",
     "@angular/http": "6.1.10",
     "@angular/platform-browser": "6.1.10",
@@ -61,6 +61,6 @@
     "typescript": "~2.9.2"
   }, 
   "overrides": {
-    "@angular/core": { ".": "npm:@neverendingsupport/angular@6.1.10-core-6.1.14" }
+    "@angular/core": { ".": "npm:@neverendingsupport/angular@6.1.10-core-6.1.15" }
   }
 }
