@@ -4,6 +4,13 @@ FROM python:2.7
 # Set the working directory in the container
 WORKDIR /app
 
+# ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
+ARG NES_AUTH_TOKEN
+
+# Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
+RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
+    echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
+
 # Install Node.js
 # replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
