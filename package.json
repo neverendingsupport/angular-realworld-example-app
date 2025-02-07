@@ -21,33 +21,33 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "npm:@neverendingsupport/angular@10.2.5-animations-10.2.10",
-    "@angular/common": "npm:@neverendingsupport/angular@10.2.5-common-10.2.10",
-    "@angular/compiler": "npm:@neverendingsupport/angular@10.2.5-compiler-10.2.10",
-    "@angular/core": "npm:@neverendingsupport/angular@10.2.5-core-10.2.10",
-    "@angular/elements": "npm:@neverendingsupport/angular@10.2.5-elements-10.2.10",
-    "@angular/forms": "npm:@neverendingsupport/angular@10.2.5-forms-10.2.10",
-    "@angular/localize": "npm:@neverendingsupport/angular@10.2.5-localize-10.2.10",
-    "@angular/platform-browser": "npm:@neverendingsupport/angular@10.2.5-platform-browser-10.2.10",
-    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@10.2.5-platform-browser-dynamic-10.2.10",
-    "@angular/platform-server": "npm:@neverendingsupport/angular@10.2.5-platform-server-10.2.10",
-    "@angular/platform-webworker": "npm:@neverendingsupport/angular@10.2.5-platform-webworker-10.2.10",
-    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular@10.2.5-platform-webworker-dynamic-10.2.10",
-    "@angular/router": "npm:@neverendingsupport/angular@10.2.5-router-10.2.10",
-    "@angular/service-worker": "npm:@neverendingsupport/angular@10.2.5-service-worker-10.2.10",
-    "@angular/upgrade": "npm:@neverendingsupport/angular@10.2.5-upgrade-10.2.10",
+    "@angular/animations": "npm:@neverendingsupport/angular@10.2.5-animations-10.2.11",
+    "@angular/common": "npm:@neverendingsupport/angular@10.2.5-common-10.2.11",
+    "@angular/compiler": "npm:@neverendingsupport/angular@10.2.5-compiler-10.2.11",
+    "@angular/core": "npm:@neverendingsupport/angular@10.2.5-core-10.2.11",
+    "@angular/elements": "npm:@neverendingsupport/angular@10.2.5-elements-10.2.11",
+    "@angular/forms": "npm:@neverendingsupport/angular@10.2.5-forms-10.2.11",
+    "@angular/localize": "npm:@neverendingsupport/angular@10.2.5-localize-10.2.11",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular@10.2.5-platform-browser-10.2.11",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@10.2.5-platform-browser-dynamic-10.2.11",
+    "@angular/platform-server": "npm:@neverendingsupport/angular@10.2.5-platform-server-10.2.11",
+    "@angular/platform-webworker": "npm:@neverendingsupport/angular@10.2.5-platform-webworker-10.2.11",
+    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular@10.2.5-platform-webworker-dynamic-10.2.11",
+    "@angular/router": "npm:@neverendingsupport/angular@10.2.5-router-10.2.11",
+    "@angular/service-worker": "npm:@neverendingsupport/angular@10.2.5-service-worker-10.2.11",
+    "@angular/upgrade": "npm:@neverendingsupport/angular@10.2.5-upgrade-10.2.11",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
     "tslib": "^2.0.0",
-    "zone.js": "npm:@neverendingsupport/angular@10.2.5-zone.js-10.2.10"
+    "zone.js": "npm:@neverendingsupport/angular@10.2.5-zone.js-10.2.11"
   },
   "devDependencies": {
     "@neverendingsupport/angular-tools": "1.1.3",
     "@angular-devkit/build-angular": "~0.1002.1",
     "@angular/cli": "~10.2.1",
-    "@angular/compiler-cli": "npm:@neverendingsupport/angular@10.2.5-compiler-cli-10.2.10",
-    "@angular/language-service": "npm:@neverendingsupport/angular@10.2.5-language-service-10.2.10",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular@10.2.5-compiler-cli-10.2.11",
+    "@angular/language-service": "npm:@neverendingsupport/angular@10.2.5-language-service-10.2.11",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/marked": "^4.0.8",
@@ -69,58 +69,58 @@
   },
   "overrides": {
     "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-animations-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-animations-10.2.11"
     },
     "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-common-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-common-10.2.11"
     },
     "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-compiler-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-compiler-10.2.11"
     },
     "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-compiler-cli-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-compiler-cli-10.2.11"
     },
     "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-core-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-core-10.2.11"
     },
     "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-elements-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-elements-10.2.11"
     },
     "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-forms-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-forms-10.2.11"
     },
     "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-language-service-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-language-service-10.2.11"
     },
     "@angular/localize": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-localize-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-localize-10.2.11"
     },
     "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-platform-browser-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-platform-browser-10.2.11"
     },
     "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-platform-browser-dynamic-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-platform-browser-dynamic-10.2.11"
     },
     "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-platform-server-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-platform-server-10.2.11"
     },
     "@angular/platform-webworker": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-platform-webworker-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-platform-webworker-10.2.11"
     },
     "@angular/platform-webworker-dynamic": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-platform-webworker-dynamic-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-platform-webworker-dynamic-10.2.11"
     },
     "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-router-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-router-10.2.11"
     },
     "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-service-worker-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-service-worker-10.2.11"
     },
     "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-upgrade-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-upgrade-10.2.11"
     },
     "zone.js": {
-      ".": "npm:@neverendingsupport/angular@10.2.5-zone.js-10.2.10"
+      ".": "npm:@neverendingsupport/angular@10.2.5-zone.js-10.2.11"
     }
   }
 }
