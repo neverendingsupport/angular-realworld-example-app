@@ -20,28 +20,30 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "npm:@neverendingsupport/angular@7.2.16-animations-7.2.19",
-    "@angular/bazel": "npm:@neverendingsupport/angular@7.2.16-bazel-7.2.19",
-    "@angular/common": "npm:@neverendingsupport/angular@7.2.16-common-7.2.19",
-    "@angular/compiler": "npm:@neverendingsupport/angular@7.2.16-compiler-7.2.19",
-    "@angular/core": "npm:@neverendingsupport/angular@7.2.16-core-7.2.19",
-    "@angular/elements": "npm:@neverendingsupport/angular@7.2.16-elements-7.2.19",
-    "@angular/forms": "npm:@neverendingsupport/angular@7.2.16-forms-7.2.19",
-    "@angular/http": "npm:@neverendingsupport/angular@7.2.16-http-7.2.19",
-    "@angular/platform-browser": "npm:@neverendingsupport/angular@7.2.16-platform-browser-7.2.19",
-    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@7.2.16-platform-browser-dynamic-7.2.19",
-    "@angular/platform-server": "npm:@neverendingsupport/angular@7.2.16-platform-server-7.2.19",
-    "@angular/platform-webworker": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-7.2.19",
-    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-dynamic-7.2.19",
-    "@angular/router": "npm:@neverendingsupport/angular@7.2.16-router-7.2.19",
-    "@angular/service-worker": "npm:@neverendingsupport/angular@7.2.16-service-worker-7.2.19",
-    "@angular/upgrade": "npm:@neverendingsupport/angular@7.2.16-upgrade-7.2.19"
+    "@angular/animations": "npm:@neverendingsupport/angular@7.2.16-animations-7.2.20",
+    "@angular/bazel": "npm:@neverendingsupport/angular@7.2.16-bazel-7.2.20",
+    "@angular/common": "npm:@neverendingsupport/angular@7.2.16-common-7.2.20",
+    "@angular/compiler": "npm:@neverendingsupport/angular@7.2.16-compiler-7.2.20",
+    "@angular/core": "npm:@neverendingsupport/angular@7.2.16-core-7.2.20",
+    "@angular/elements": "npm:@neverendingsupport/angular@7.2.16-elements-7.2.20",
+    "@angular/forms": "npm:@neverendingsupport/angular@7.2.16-forms-7.2.20",
+    "@angular/http": "npm:@neverendingsupport/angular@7.2.16-http-7.2.20",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular@7.2.16-platform-browser-7.2.20",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@7.2.16-platform-browser-dynamic-7.2.20",
+    "@angular/platform-server": "npm:@neverendingsupport/angular@7.2.16-platform-server-7.2.20",
+    "@angular/platform-webworker": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-7.2.20",
+    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-dynamic-7.2.20",
+    "@angular/router": "npm:@neverendingsupport/angular@7.2.16-router-7.2.20",
+    "@angular/service-worker": "npm:@neverendingsupport/angular@7.2.16-service-worker-7.2.20",
+    "@angular/upgrade": "npm:@neverendingsupport/angular@7.2.16-upgrade-7.2.20",
+    "marked": "0.6.3",
+    "zone.js": "^0.8.29"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
     "@angular/cli": "~7.3.10",
-    "@angular/compiler-cli": "npm:@neverendingsupport/angular@7.2.16-compiler-cli-7.2.19",
-    "@angular/language-service": "npm:@neverendingsupport/angular@7.2.16-language-service-7.2.19",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular@7.2.16-compiler-cli-7.2.20",
+    "@angular/language-service": "npm:@neverendingsupport/angular@7.2.16-language-service-7.2.20",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -60,23 +62,59 @@
     "typescript": "~3.2.2"
   },
   "overrides": {
-    "@angular/animations": { ".": "npm:@neverendingsupport/angular@7.2.16-animations-7.2.19" },
-    "@angular/bazel": { ".": "npm:@neverendingsupport/angular@7.2.16-bazel-7.2.19" },
-    "@angular/common": { ".": "npm:@neverendingsupport/angular@7.2.16-common-7.2.19" },
-    "@angular/compiler": { ".": "npm:@neverendingsupport/angular@7.2.16-compiler-7.2.19" },
-    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular@7.2.16-compiler-cli-7.2.19" },
-    "@angular/core": { ".": "npm:@neverendingsupport/angular@7.2.16-core-7.2.19" },
-    "@angular/elements": { ".": "npm:@neverendingsupport/angular@7.2.16-elements-7.2.19" },
-    "@angular/forms": { ".": "npm:@neverendingsupport/angular@7.2.16-forms-7.2.19" },
-    "@angular/http": { ".": "npm:@neverendingsupport/angular@7.2.16-http-7.2.19" },
-    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@7.2.16-language-service-7.2.19" },
-    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-browser-7.2.19" },
-    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-browser-dynamic-7.2.19" },
-    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-server-7.2.19" },
-    "@angular/platform-webworker": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-7.2.19" },
-    "@angular/platform-webworker-dynamic":{ ".": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-dynamic-7.2.19" },
-    "@angular/router": { ".": "npm:@neverendingsupport/angular@7.2.16-router-7.2.19" },
-    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@7.2.16-service-worker-7.2.19" },
-    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@7.2.16-upgrade-7.2.19" }
+    "@angular/animations": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-animations-7.2.20"
+    },
+    "@angular/bazel": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-bazel-7.2.20"
+    },
+    "@angular/common": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-common-7.2.20"
+    },
+    "@angular/compiler": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-compiler-7.2.20"
+    },
+    "@angular/compiler-cli": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-compiler-cli-7.2.20"
+    },
+    "@angular/core": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-core-7.2.20"
+    },
+    "@angular/elements": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-elements-7.2.20"
+    },
+    "@angular/forms": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-forms-7.2.20"
+    },
+    "@angular/http": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-http-7.2.20"
+    },
+    "@angular/language-service": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-language-service-7.2.20"
+    },
+    "@angular/platform-browser": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-platform-browser-7.2.20"
+    },
+    "@angular/platform-browser-dynamic": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-platform-browser-dynamic-7.2.20"
+    },
+    "@angular/platform-server": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-platform-server-7.2.20"
+    },
+    "@angular/platform-webworker": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-7.2.20"
+    },
+    "@angular/platform-webworker-dynamic": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-dynamic-7.2.20"
+    },
+    "@angular/router": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-router-7.2.20"
+    },
+    "@angular/service-worker": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-service-worker-7.2.20"
+    },
+    "@angular/upgrade": {
+      ".": "npm:@neverendingsupport/angular@7.2.16-upgrade-7.2.20"
+    }
   }
 }
