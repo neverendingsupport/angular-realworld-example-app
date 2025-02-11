@@ -39,8 +39,8 @@ RUN source $NVM_DIR/nvm.sh \
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
-# Install version of npm compatible with NES url used in package.json
-RUN npm install -g npm@7.11.0
+# Set npm version to a version where transitive dependencies can be correctly overridden
+RUN npm install -g npm@8.19.4
 
 # Confirm Node.js and npm are installed
 RUN node -v
