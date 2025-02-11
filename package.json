@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "docker": "docker build -t angular-v5 . && docker run -d -p 4200:4200 angular-v5",
+    "docker": "docker build --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v5 . && docker run -d -p 4200:4200 angular-v5",
     "start": "ng serve",
     "build": "ng build",
     "build-prod": "ng build --configuration production",

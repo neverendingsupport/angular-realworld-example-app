@@ -40,7 +40,7 @@ ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 # Set npm version to a version where transitive dependencies can be correctly overridden
-RUN npm install -g npm@8.19.4
+RUN npm install -g npm@7.11.2
 
 # Confirm Node.js and npm are installed
 RUN node -v
@@ -53,7 +53,7 @@ RUN npm install -g @angular/cli@1.6.8
 COPY . .
 
 # Install any needed packages specified in package.json
-RUN npm install
+RUN npm install --legacy-peer-deps
 
 # Build your Angular application
 RUN npm run build || exit 1
