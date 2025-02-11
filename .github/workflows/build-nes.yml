@@ -1,0 +1,48 @@
+name: Build Angular NES
+run-name: Build ${{ github.ref_name }} (pushed by ${{ github.actor }})
+
+on:
+  workflow_dispatch:
+    inputs:
+        branch:
+          description: "The branch you want to build"
+          required: true
+          type: string
+  
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15 # Set a timeout of 15 minutes for this job
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+          ref: ${{ inputs.branch }}
+  
+    - name: Set image name
+      run: echo "IMAGE_NAME=${{ inputs.branch }}" >> $GITHUB_ENV
+
+    - name: Build the Docker image
+      run: |
+        docker build --no-cache . \
+        --file Dockerfile \
+        --tag $IMAGE_NAME \
+        --build-arg NES_AUTH_TOKEN=${{ secrets.NES_AUTH_TOKEN }}
+    
+    - name: Run Docker container
+      run: |
+        docker run -d -p 4200:4200 --name $IMAGE_NAME $IMAGE_NAME
+        sleep 10 # Give some time for the application to start
+
+    - name: Check Docker container logs
+      run: |
+        docker logs $IMAGE_NAME
+
+    - name: Check Docker container exit status
+      run: |
+        sleep 10 # Additional wait time if needed
+        CONTAINER_EXIT_CODE=$(docker inspect $IMAGE_NAME --format='{{.State.ExitCode}}')
+        if [ "$CONTAINER_EXIT_CODE" != "0" ]; then
+          echo "Container exited with code $CONTAINER_EXIT_CODE"
+          exit 1
+        fi
