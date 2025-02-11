@@ -1,8 +1,6 @@
 name: NES Trial - All
 
 on:
-  schedule:
-    - cron: '45 0 * * *' # Runs at 00:45 UTC every day
   workflow_dispatch:
   
 jobs:
@@ -13,7 +11,18 @@ jobs:
     strategy:
         max-parallel: 3
         matrix:
-          branch: [angular-v6-nes-trial, angular-v7-nes-trial, angular-v8-nes-trial, angular-v9-nes-trial, angular-v10-nes-trial, angular-v11-nes-trial, angular-v12-nes-trial, angular-v13-nes-trial, angular-v14-nes-trial, angular-v15-nes-trial]
+          branch: [
+            angular-v6-nes-trial, 
+            angular-v7-nes-trial, 
+            angular-v8-nes-trial, 
+            angular-v9-nes-trial, 
+            angular-v10-nes-trial, 
+            angular-v11-nes-trial, 
+            angular-v12-nes-trial, 
+            angular-v13-nes-trial, 
+            angular-v14-nes-trial, 
+            angular-v15-nes-trial
+          ]
         fail-fast: false # Allows all matrix jobs to run to completion
     steps:
     - uses: actions/checkout@v3

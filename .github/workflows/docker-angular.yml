@@ -1,8 +1,6 @@
 name: Angular - All
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Runs at midnight UTC every d
   workflow_dispatch:
   
 jobs:
@@ -13,7 +11,20 @@ jobs:
     strategy:
         max-parallel: 3
         matrix:
-          branch: [angular-v6, angular-v7, angular-v8, angular-v9, angular-v10, angular-v11, angular-v12, angular-v13, angular-v14, angular-v15, angular-v16, angular-v17.2]
+          branch: [
+            angular-v6,
+            angular-v7,
+            angular-v8,
+            angular-v9,
+            angular-v10,
+            angular-v11,
+            angular-v12,
+            angular-v13,
+            angular-v14,
+            angular-v15,
+            angular-v16,
+            angular-v17.2
+          ]
         fail-fast: false # Allows all matrix jobs to run to completion
     steps:
     - uses: actions/checkout@v3

@@ -1,8 +1,6 @@
 name: NES - All
 
 on:
-  schedule:
-    - cron: '24 0 * * *' # Runs at 00:24 UTC every day
   workflow_dispatch:
   
 jobs:
@@ -13,7 +11,19 @@ jobs:
     strategy:
         max-parallel: 1
         matrix:
-          branch: [angular-v6-nes, angular-v7-nes, angular-v8-nes, angular-v9-nes, angular-v10-nes, angular-v11-nes, angular-v12-nes, angular-v13-nes, angular-v14-nes, angular-v15-nes]
+          branch: [
+            angular-v6-nes, 
+            angular-v7-nes, 
+            angular-v8-nes, 
+            angular-v9-nes, 
+            angular-v10-nes, 
+            angular-v11-nes, 
+            angular-v12-nes, 
+            angular-v13-nes, 
+            angular-v14-nes, 
+            angular-v15-nes, 
+            angular-v16-nes
+          ]
         fail-fast: false # Allows all matrix jobs to run to completion
     steps:
     - uses: actions/checkout@v3
