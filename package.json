@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "docker": "docker build -t angular-v4 . && docker run -d -p 4200:4200 angular-v4",
+    "docker": "docker build --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v4 . && docker run -d -p 4200:4200 angular-v4",
     "start": "ng serve",
     "build": "ng build",
     "build-prod": "ng build --configuration production",
@@ -39,7 +39,7 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/cli": "^1.4.7",
+    "@angular/cli": "1.4.10",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@4.4.7-compiler-cli-4.4.10",
     "@angular/language-service": "npm:@neverendingsupport/angular@4.4.7-language-service-4.4.10",
     "@angular/tsc-wrapped": "npm:@neverendingsupport/angular@4.4.7-tsc-wrapped-4.4.10",

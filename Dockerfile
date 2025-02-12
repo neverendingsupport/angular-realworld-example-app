@@ -4,6 +4,13 @@ FROM python:2.7
 # Set the working directory in the container
 WORKDIR /app
 
+# ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
+ARG NES_AUTH_TOKEN
+
+# Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
+RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
+    echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
+
 # Install Node.js
 # replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
@@ -32,19 +39,15 @@ RUN source $NVM_DIR/nvm.sh \
 ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
-# ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
-ARG NES_AUTH_TOKEN
-
-# Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
-RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
-    echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
+# Set npm version to a version where transitive dependencies can be correctly overridden
+# RUN npm install -g npm@7.11.2
 
 # Confirm Node.js and npm are installed
 RUN node -v
 RUN npm -v
 
 # Install Angular CLI globally inside the container
-RUN npm install -g @angular/cli@1.4.7
+RUN npm install -g @angular/cli@1.4.10
 
 # Copy the project files into the container at /app
 COPY . .
