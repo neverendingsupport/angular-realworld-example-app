@@ -14,6 +14,7 @@ jobs:
         max-parallel: 1
         matrix:
           branch: [
+            angular-v4-nes-complete,
             angular-v5-nes-complete, 
             angular-v6-nes-complete, 
             angular-v7-nes-complete, 
