@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "postinstall": "npx ngnes",
     "ng": "ng",
     "docker": "docker build --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v16 . && docker run -d -p 4200:4200 angular-v16",
     "start": "ng serve",
@@ -17,7 +16,6 @@
   },
   "private": true,
   "dependencies": {
-    "@neverendingsupport/angular-tools": "1.1.3",
     "@angular/animations": "npm:@neverendingsupport/angular@16.2.12-animations-16.2.15",
     "@angular/common": "npm:@neverendingsupport/angular@16.2.12-common-16.2.15",
     "@angular/compiler": "npm:@neverendingsupport/angular@16.2.12-compiler-16.2.15",
