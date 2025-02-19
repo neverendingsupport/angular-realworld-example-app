@@ -1,6 +1,6 @@
 # Stage 1: Build the Angular application
 # Use an official Node.js image that satisfies the version requirement
-FROM node:18.10.0 as build
+FROM node:20.18.3 as build
 
 # Set the working directory in the container
 WORKDIR /app
@@ -10,7 +10,7 @@ RUN node -v
 RUN npm -v
 
 # Install Angular CLI globally inside the container
-RUN npm install -g @angular/cli@16.2.8
+RUN npm install -g @angular/cli@17.3.12
 
 # Copy the project files into the container at /app
 COPY . .
