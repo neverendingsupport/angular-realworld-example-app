@@ -70,7 +70,7 @@
     "tslint": "~5.11.0"
   },
   "overrides": {
-    "typescript": { ".": "typescript@2.9.2" },
+    "typescript": "2.9.2",
     "@angular/animations": {
       ".": "npm:@neverendingsupport/angular@6.1.10-animations-6.1.15"
     },
