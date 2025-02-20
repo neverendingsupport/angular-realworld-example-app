@@ -46,9 +46,6 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN node -v
 RUN npm -v
 
-# Install Angular CLI globally inside the container
-RUN npm install -g @angular/cli@1.4.10
-
 # Copy the project files into the container at /app
 COPY . .
 
@@ -62,4 +59,4 @@ RUN npm run build || exit 1
 EXPOSE 4200
 
 # Run the app when the container launches
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["npm", "run", "ng", "serve", "--", "--host", "0.0.0.0"]
