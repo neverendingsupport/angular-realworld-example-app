@@ -23,7 +23,7 @@ RUN apt-get update \
 
 # nvm environment variables
 ENV NVM_DIR /usr/local/nvm
-ENV NODE_VERSION 10.24.1
+ENV NODE_VERSION 12.13.0
 
 # install nvm
 # https://github.com/creationix/nvm#install-script
@@ -40,7 +40,7 @@ ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
 ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 
 # Set npm version to a version where transitive dependencies can be correctly overridden
-RUN npm install -g npm@7.11.2
+RUN npm install -g npm@8.19.4
 
 # Confirm Node.js and npm are installed
 RUN node -v
