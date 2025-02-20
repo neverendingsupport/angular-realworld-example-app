@@ -30,7 +30,7 @@ jobs:
           ]
         fail-fast: false # Allows all matrix jobs to run to completion
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
           ref: ${{ matrix.branch }}
     - name: Build the Docker image
