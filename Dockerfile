@@ -46,14 +46,11 @@ RUN npm install -g npm@7.11.2
 RUN node -v
 RUN npm -v
 
-# Install Angular CLI globally inside the container
-RUN npm install -g @angular/cli@1.6.8
-
 # Copy the project files into the container at /app
 COPY . .
 
 # Install any needed packages specified in package.json
-RUN npm install --legacy-peer-deps
+RUN npm install
 
 # Build your Angular application
 RUN npm run build || exit 1
@@ -62,4 +59,4 @@ RUN npm run build || exit 1
 EXPOSE 4200
 
 # Run the app when the container launches
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["npm", "run", "ng", "serve", "--", "--host", "0.0.0.0"]
