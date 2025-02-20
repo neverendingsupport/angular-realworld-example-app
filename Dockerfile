@@ -38,7 +38,10 @@ ARG NES_AUTH_TOKEN
 # Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
 RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
     echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
-    
+
+# Set npm version to a version where transitive dependencies can be correctly overridden
+RUN npm install -g npm@8.19.4
+
 # Confirm Node.js and npm are installed
 RUN node -v
 RUN npm -v
