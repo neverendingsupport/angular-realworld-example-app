@@ -16,8 +16,6 @@ ARG NES_AUTH_TOKEN
 RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
     echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
 
-# Install Angular CLI globally inside the container
-RUN npm install -g @angular/cli@17.3.12
 
 # Copy the project files into the container at /app
 COPY . .
@@ -32,4 +30,4 @@ RUN npm run build || exit 1
 EXPOSE 4200
 
 # Run the app when the container launches
-CMD ["ng", "serve", "--host", "0.0.0.0"]
+CMD ["npm", "run", "ng", "serve", "--", "--host", "0.0.0.0"]
