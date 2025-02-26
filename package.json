@@ -27,7 +27,6 @@
     "@angular/forms": "npm:@neverendingsupport/angular@6.1.10-forms-6.1.15",
     "@angular/elements": "npm:@neverendingsupport/angular@6.1.10-elements-6.1.15",
     "@angular/http": "npm:@neverendingsupport/angular@6.1.10-http-6.1.15",
-    "@angular/language-service": "npm:@neverendingsupport/angular@6.1.10-language-service-6.1.15",
     "@angular/platform-browser": "npm:@neverendingsupport/angular@6.1.10-platform-browser-6.1.15",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@6.1.10-platform-browser-dynamic-6.1.15",
     "@angular/platform-server": "npm:@neverendingsupport/angular@6.1.10-platform-server-6.1.15",
@@ -44,15 +43,19 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@6.1.10-compiler-cli-6.1.15",
-    "@angular/cli": "npm:@neverendingsupport/angular-cli@6.2.9-cli-6.2.11",
-    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@6.2.9-architect-6.2.11",
-    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@6.2.9-build-angular-6.2.11",
-    "@angular-devkit/build-ng-packagr": "npm:@neverendingsupport/angular-cli@6.2.9-build-ng-packagr-6.2.11",
-    "@angular-devkit/build-optimizer": "npm:@neverendingsupport/angular-cli@6.2.9-build-optimizer-6.2.11",
-    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@6.2.9-build-webpack-6.2.11",
-    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@6.2.9-core-6.2.11",
-    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@6.2.9-schematics-6.2.11",
-    "@angular-devkit/webpack": "npm:@neverendingsupport/angular-cli@6.2.9-webpack-6.2.11",
+    "@angular/language-service": "npm:@neverendingsupport/angular@6.1.10-language-service-6.1.15",
+    "@angular/cli": "npm:@neverendingsupport/angular-cli@6.2.9-cli-6.2.12",
+    "@angular/pwa": "npm:@neverendingsupport/angular-cli@6.2.9-pwa-6.2.12",
+    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@6.2.9-architect-6.2.12",
+    "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-cli@6.2.9-architect-cli-6.2.12",
+    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@6.2.9-build-angular-6.2.12",
+    "@angular-devkit/build-ng-packagr": "npm:@neverendingsupport/angular-cli@6.2.9-build-ng-packagr-6.2.12",
+    "@angular-devkit/build-optimizer": "npm:@neverendingsupport/angular-cli@6.2.9-build-optimizer-6.2.12",
+    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@6.2.9-build-webpack-6.2.12",
+    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@6.2.9-core-6.2.12",
+    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@6.2.9-schematics-6.2.12",
+    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@6.2.9-schematics-cli-6.2.12",
+    "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@6.2.9-webpack-6.2.12",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -123,31 +126,40 @@
       ".": "npm:@neverendingsupport/angular@6.1.10-upgrade-6.1.15"
     },
     "@angular/cli": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-cli-6.2.11"
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-cli-6.2.12"
+    },
+    "@angular/pwa": {
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-pwa-6.2.12"
     },
     "@angular-devkit/architect": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-architect-6.2.11"
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-architect-6.2.12"
+    },
+    "@angular-devkit/architect-cli": {
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-architect-cli-6.2.12"
     },
     "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-build-angular-6.2.11"
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-build-angular-6.2.12"
     },
     "@angular-devkit/build-ng-packagr": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-build-ng-packagr-6.2.11"
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-build-ng-packagr-6.2.12"
     },
     "@angular-devkit/build-optimizer": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-build-optimizer-6.2.11"
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-build-optimizer-6.2.12"
     },
     "@angular-devkit/build-webpack": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-build-webpack-6.2.11"
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-build-webpack-6.2.12"
     },
     "@angular-devkit/core": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-core-6.2.11"
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-core-6.2.12"
     },
     "@angular-devkit/schematics": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-schematics-6.2.11"
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-schematics-6.2.12"
     },
-    "@angular-devkit/webpack": {
-      ".": "npm:@neverendingsupport/angular-cli@6.2.9-webpack-6.2.11"
+    "@angular-devkit/schematics-cli": {
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-schematics-cli-6.2.12"
+    },
+    "@ngtools/webpack": {
+      ".": "npm:@neverendingsupport/angular-cli@6.2.9-webpack-6.2.12"
     }
   }
 }
