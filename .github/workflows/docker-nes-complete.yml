@@ -26,7 +26,8 @@ jobs:
             angular-v13-nes-complete, 
             angular-v14-nes-complete, 
             angular-v15-nes-complete, 
-            angular-v16-nes-complete
+            angular-v16-nes-complete,
+            angular-v17-nes-complete
           ]
         fail-fast: false # Allows all matrix jobs to run to completion
     steps:
