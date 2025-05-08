@@ -17,21 +17,40 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "npm:@neverendingsupport/angular@16.2.12-animations-16.2.15",
+    "@angular/cdk": "npm:@neverendingsupport/angular-cdk@16.2.14-cdk-16.2.16",
     "@angular/common": "npm:@neverendingsupport/angular@16.2.12-common-16.2.15",
     "@angular/compiler": "npm:@neverendingsupport/angular@16.2.12-compiler-16.2.15",
     "@angular/core": "npm:@neverendingsupport/angular@16.2.12-core-16.2.15",
     "@angular/elements": "npm:@neverendingsupport/angular@16.2.12-elements-16.2.15",
     "@angular/forms": "npm:@neverendingsupport/angular@16.2.12-forms-16.2.15",
+    "@angular/google-maps": "npm:@neverendingsupport/angular-google-maps@16.2.14-google-maps-16.2.16",
     "@angular/localize": "npm:@neverendingsupport/angular@16.2.12-localize-16.2.15",
+    "@angular/material": "npm:@neverendingsupport/angular-material@16.2.14-material-16.2.16",
+    "@angular/material-date-fns-adapter": "npm:@neverendingsupport/angular-material-date-fns-adapter@16.2.14-material-date-fns-adapter-16.2.16",
+    "@angular/material-luxon-adapter": "npm:@neverendingsupport/angular-material-luxon-adapter@16.2.14-material-luxon-adapter-16.2.16",
+    "@angular/material-moment-adapter": "npm:@neverendingsupport/angular-material-moment-adapter@16.2.14-material-moment-adapter-16.2.16",
     "@angular/platform-browser": "npm:@neverendingsupport/angular@16.2.12-platform-browser-16.2.15",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@16.2.12-platform-browser-dynamic-16.2.15",
     "@angular/platform-server": "npm:@neverendingsupport/angular@16.2.12-platform-server-16.2.15",
     "@angular/router": "npm:@neverendingsupport/angular@16.2.12-router-16.2.15",
     "@angular/service-worker": "npm:@neverendingsupport/angular@16.2.12-service-worker-16.2.15",
     "@angular/upgrade": "npm:@neverendingsupport/angular@16.2.12-upgrade-16.2.15",
+    "@angular/youtube-player": "npm:@neverendingsupport/angular-youtube-player@16.2.14-youtube-player-16.2.16",
+    "@ngx-translate/core": "npm:@neverendingsupport/ngx-translate-core@16.0.4-core-16.0.5",
+    "@ngx-translate/http-loader": "npm:@neverendingsupport/ngx-translate-http-loader@16.0.1-http-loader-16.0.2",
+    "@ngrx/component": "npm:@neverendingsupport/ngrx-component@16.3.0-component-16.3.1",
+    "@ngrx/component-store": "npm:@neverendingsupport/ngrx-component-store@16.3.0-component-store-16.3.1",
+    "@ngrx/data": "npm:@neverendingsupport/ngrx-data@16.3.0-data-16.3.1",
+    "@ngrx/effects": "npm:@neverendingsupport/ngrx-effects@16.3.0-effects-16.3.1",
+    "@ngrx/entity": "npm:@neverendingsupport/ngrx-entity@16.3.0-entity-16.3.1",
+    "@ngrx/router-store": "npm:@neverendingsupport/ngrx-router-store@16.3.0-router-store-16.3.1",
+    "@ngrx/signals": "npm:@neverendingsupport/ngrx-signals@16.3.0-signals-16.3.1",
+    "@ngrx/store": "npm:@neverendingsupport/ngrx-store@16.3.0-store-16.3.1",
+    "@ngrx/store-devtools": "npm:@neverendingsupport/ngrx-store-devtools@16.3.0-store-devtools-16.3.1",
     "@rx-angular/cdk": "^16.0.0",
     "@rx-angular/template": "^16.0.0",
     "marked": "^4.2.12",
+    "ngx-bootstrap": "npm:@neverendingsupport/ngx-bootstrap@11.0.2-ngx-bootstrap-11.0.3",
     "rxjs": "^7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.3"
@@ -50,6 +69,8 @@
     "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@16.2.16-webpack-16.2.17",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@16.2.12-compiler-cli-16.2.15",
     "@angular/language-service": "npm:@neverendingsupport/angular@16.2.12-language-service-16.2.15",
+    "@ngrx/eslint-plugin": "npm:@neverendingsupport/ngrx-eslint-plugin@16.3.0-eslint-plugin-16.3.1",
+    "@ngrx/schematics": "npm:@neverendingsupport/ngrx-schematics@16.3.0-schematics-16.3.1",
     "@types/jasmine": "~4.3.0",
     "@types/marked": "^4.0.8",
     "husky": "^8.0.3",
@@ -67,6 +88,7 @@
     "@angular/animations": {
       ".": "npm:@neverendingsupport/angular@16.2.12-animations-16.2.15"
     },
+    "@angular/cdk": { ".": "npm:@neverendingsupport/angular-cdk@16.2.14-cdk-16.2.16" },
     "@angular/common": {
       ".": "npm:@neverendingsupport/angular@16.2.12-common-16.2.15"
     },
@@ -85,12 +107,17 @@
     "@angular/forms": {
       ".": "npm:@neverendingsupport/angular@16.2.12-forms-16.2.15"
     },
+    "@angular/google-maps": { ".": "npm:@neverendingsupport/angular-google-maps@16.2.14-google-maps-16.2.16" },
     "@angular/language-service": {
       ".": "npm:@neverendingsupport/angular@16.2.12-language-service-16.2.15"
     },
     "@angular/localize": {
       ".": "npm:@neverendingsupport/angular@16.2.12-localize-16.2.15"
     },
+    "@angular/material": { ".": "npm:@neverendingsupport/angular-material@16.2.14-material-16.2.16" },
+    "@angular/material-date-fns-adapter": { ".": "npm:@neverendingsupport/angular-material-date-fns-adapter@16.2.14-material-date-fns-adapter-16.2.16" },
+    "@angular/material-luxon-adapter": { ".": "npm:@neverendingsupport/angular-material-luxon-adapter@16.2.14-material-luxon-adapter-16.2.16" },
+    "@angular/material-moment-adapter": { ".": "npm:@neverendingsupport/angular-material-moment-adapter@16.2.14-material-moment-adapter-16.2.16" },
     "@angular/platform-browser": {
       ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-16.2.15"
     },
@@ -118,6 +145,7 @@
     "@angular/pwa": {
       ".": "npm:@neverendingsupport/angular-cli@16.2.16-pwa-16.2.17"
     },
+    "@angular/youtube-player": { ".": "npm:@neverendingsupport/angular-youtube-player@16.2.14-youtube-player-16.2.16" },
     "@angular-devkit/architect": {
       ".": "npm:@neverendingsupport/angular-cli@16.2.16-architect-16.2.17"
     },
@@ -139,9 +167,23 @@
     "@angular-devkit/schematics-cli": {
       ".": "npm:@neverendingsupport/angular-cli@16.2.16-schematics-cli-16.2.17"
     },
+    "@ngx-translate/core": { ".": "npm:@neverendingsupport/ngx-translate-core@16.0.4-core-16.0.5" },
+    "@ngx-translate/http-loader": { ".": "npm:@neverendingsupport/ngx-translate-http-loader@16.0.1-http-loader-16.0.2" },
+    "@ngrx/component": { ".": "npm:@neverendingsupport/ngrx-component@16.3.0-component-16.3.1" },
+    "@ngrx/component-store": { ".": "npm:@neverendingsupport/ngrx-component-store@16.3.0-component-store-16.3.1" },
+    "@ngrx/data": { ".": "npm:@neverendingsupport/ngrx-data@16.3.0-data-16.3.1" },
+    "@ngrx/effects": { ".": "npm:@neverendingsupport/ngrx-effects@16.3.0-effects-16.3.1" },
+    "@ngrx/entity": { ".": "npm:@neverendingsupport/ngrx-entity@16.3.0-entity-16.3.1" },
+    "@ngrx/eslint-plugin": { ".": "npm:@neverendingsupport/ngrx-eslint-plugin@16.3.0-eslint-plugin-16.3.1" },
+    "@ngrx/router-store": { ".": "npm:@neverendingsupport/ngrx-router-store@16.3.0-router-store-16.3.1" },
+    "@ngrx/schematics": { ".": "npm:@neverendingsupport/ngrx-schematics@16.3.0-schematics-16.3.1" },
+    "@ngrx/signals": { ".": "npm:@neverendingsupport/ngrx-signals@16.3.0-signals-16.3.1" },
+    "@ngrx/store": { ".": "npm:@neverendingsupport/ngrx-store@16.3.0-store-16.3.1" },
+    "@ngrx/store-devtools": { ".": "npm:@neverendingsupport/ngrx-store-devtools@16.3.0-store-devtools-16.3.1" },
     "@ngtools/webpack": {
       ".": "npm:@neverendingsupport/angular-cli@16.2.16-webpack-16.2.17"
-    }
+    },
+    "ngx-bootstrap": { ".": "npm:@neverendingsupport/ngx-bootstrap@11.0.2-ngx-bootstrap-11.0.3" }
   },
   "lint-staged": {
     "*.{ts,html,css,json,md}": "prettier --write"
