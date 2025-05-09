@@ -55,6 +55,8 @@
     "typescript": "4.6.4"
   },
   "overrides": {
-    "@angular/core": { ".": "npm:@neverendingsupport/angular@13.4.0-trial-core" }
+    "@angular/core": {
+      ".": "npm:@neverendingsupport/angular@13.4.0-trial-core"
+    }
   }
 }
