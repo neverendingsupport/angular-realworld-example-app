@@ -16,11 +16,10 @@ RUN npm -v
 ARG NES_AUTH_TOKEN
 
 # Dev: Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
-# RUN echo "@neverendingsupport:registry=https://registry.dev.nes.herodevs.com/npm/pkg/" > .npmrc && \
-#     echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
-
+RUN echo "@neverendingsupport:registry=https://registry.dev.nes.herodevs.com/npm/pkg/" > .npmrc && \
 # Prod: Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
-RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
+# RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
+
     echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
 
 # Copy the project files into the container at /app
