@@ -16,19 +16,19 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "npm:@neverendingsupport/angular@16.2.12-animations-16.2.15",
-    "@angular/common": "npm:@neverendingsupport/angular@16.2.12-common-16.2.15",
-    "@angular/compiler": "npm:@neverendingsupport/angular@16.2.12-compiler-16.2.15",
-    "@angular/core": "npm:@neverendingsupport/angular@16.2.12-core-16.2.15",
-    "@angular/elements": "npm:@neverendingsupport/angular@16.2.12-elements-16.2.15",
-    "@angular/forms": "npm:@neverendingsupport/angular@16.2.12-forms-16.2.15",
-    "@angular/localize": "npm:@neverendingsupport/angular@16.2.12-localize-16.2.15",
-    "@angular/platform-browser": "npm:@neverendingsupport/angular@16.2.12-platform-browser-16.2.15",
-    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@16.2.12-platform-browser-dynamic-16.2.15",
-    "@angular/platform-server": "npm:@neverendingsupport/angular@16.2.12-platform-server-16.2.15",
-    "@angular/router": "npm:@neverendingsupport/angular@16.2.12-router-16.2.15",
-    "@angular/service-worker": "npm:@neverendingsupport/angular@16.2.12-service-worker-16.2.15",
-    "@angular/upgrade": "npm:@neverendingsupport/angular@16.2.12-upgrade-16.2.15",
+    "@angular/animations": "npm:@neverendingsupport/angular@16.2.12-trial-animations",
+    "@angular/common": "npm:@neverendingsupport/angular@16.2.12-trial-common",
+    "@angular/compiler": "npm:@neverendingsupport/angular@16.2.12-trial-compiler",
+    "@angular/core": "npm:@neverendingsupport/angular@16.2.12-trial-core",
+    "@angular/elements": "npm:@neverendingsupport/angular@16.2.12-trial-elements",
+    "@angular/forms": "npm:@neverendingsupport/angular@16.2.12-trial-forms",
+    "@angular/localize": "npm:@neverendingsupport/angular@16.2.12-trial-localize",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular@16.2.12-trial-platform-browser",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@16.2.12-trial-platform-browser-dynamic",
+    "@angular/platform-server": "npm:@neverendingsupport/angular@16.2.12-trial-platform-server",
+    "@angular/router": "npm:@neverendingsupport/angular@16.2.12-trial-router",
+    "@angular/service-worker": "npm:@neverendingsupport/angular@16.2.12-trial-service-worker",
+    "@angular/upgrade": "npm:@neverendingsupport/angular@16.2.12-trial-upgrade",
     "@rx-angular/cdk": "^16.0.0",
     "@rx-angular/template": "^16.0.0",
     "marked": "^4.2.12",
@@ -37,19 +37,10 @@
     "zone.js": "~0.13.3"
   },
   "devDependencies": {
-    "@angular/cli": "npm:@neverendingsupport/angular-cli@16.2.16-cli-16.2.17",
-    "@angular/create": "npm:@neverendingsupport/angular-cli@16.2.16-create-16.2.17",
-    "@angular/pwa": "npm:@neverendingsupport/angular-cli@16.2.16-pwa-16.2.17",
-    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@16.2.16-architect-16.2.17",
-    "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-cli@16.2.16-architect-cli-16.2.17",
-    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@16.2.16-build-angular-16.2.17",
-    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@16.2.16-build-webpack-16.2.17",
-    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@16.2.16-core-16.2.17",
-    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@16.2.16-schematics-16.2.17",
-    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@16.2.16-schematics-cli-16.2.17",
-    "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@16.2.16-webpack-16.2.17",
-    "@angular/compiler-cli": "npm:@neverendingsupport/angular@16.2.12-compiler-cli-16.2.15",
-    "@angular/language-service": "npm:@neverendingsupport/angular@16.2.12-language-service-16.2.15",
+    "@angular/cli": "16.2.16",
+    "@angular-devkit/build-angular": "16.2.16",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular@16.2.12-trial-compiler-cli",
+    "@angular/language-service": "npm:@neverendingsupport/angular@16.2.12-trial-language-service",
     "@types/jasmine": "~4.3.0",
     "@types/marked": "^4.0.8",
     "husky": "^8.0.3",
@@ -65,82 +56,49 @@
   },
   "overrides": {
     "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-animations-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-animations"
     },
     "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-common-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-common"
     },
     "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-compiler-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-compiler"
     },
     "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-compiler-cli-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-compiler-cli"
     },
     "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-core-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-core"
     },
     "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-elements-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-elements"
     },
     "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-forms-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-forms"
     },
     "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-language-service-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-language-service"
     },
     "@angular/localize": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-localize-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-localize"
     },
     "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-platform-browser"
     },
     "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-dynamic-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-platform-browser-dynamic"
     },
     "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-platform-server-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-platform-server"
     },
     "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-router-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-router"
     },
     "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-service-worker-16.2.15"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-service-worker"
     },
     "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-upgrade-16.2.15"
-    },
-    "@angular/cli": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-cli-16.2.17"
-    },
-    "@angular/create": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-create-16.2.17"
-    },
-    "@angular/pwa": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-pwa-16.2.17"
-    },
-    "@angular-devkit/architect": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-architect-16.2.17"
-    },
-    "@angular-devkit/architect-cli": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-architect-cli-16.2.17"
-    },
-    "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-build-angular-16.2.17"
-    },
-    "@angular-devkit/build-webpack": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-build-webpack-16.2.17"
-    },
-    "@angular-devkit/core": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-core-16.2.17"
-    },
-    "@angular-devkit/schematics": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-schematics-16.2.17"
-    },
-    "@angular-devkit/schematics-cli": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-schematics-cli-16.2.17"
-    },
-    "@ngtools/webpack": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-webpack-16.2.17"
+      ".": "npm:@neverendingsupport/angular@16.2.12-trial-upgrade"
     }
   },
   "lint-staged": {
