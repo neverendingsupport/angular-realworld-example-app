@@ -38,7 +38,7 @@
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
     "tslib": "^1.10.0",
-    "zone.js": "npm:@neverendingsupport/angular@9.1.13-trial-zone.js"
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.13",
@@ -102,9 +102,6 @@
     },
     "@angular/compiler-cli": {
       ".": "npm:@neverendingsupport/angular@9.1.13-trial-compiler-cli"
-    },
-    "zone.js": {
-      ".": "npm:@neverendingsupport/angular@9.1.13-trial-zone.js"
     }
   }
 }
