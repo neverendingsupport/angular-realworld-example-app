@@ -21,20 +21,20 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "npm:@neverendingsupport/angular@11.2.14-animations-11.2.19",
-    "@angular/bazel": "npm:@neverendingsupport/angular@11.2.14-bazel-11.2.19",
-    "@angular/common": "npm:@neverendingsupport/angular@11.2.14-common-11.2.19",
-    "@angular/compiler": "npm:@neverendingsupport/angular@11.2.14-compiler-11.2.19",
-    "@angular/core": "npm:@neverendingsupport/angular@11.2.14-core-11.2.19",
-    "@angular/elements": "npm:@neverendingsupport/angular@11.2.14-elements-11.2.19",
-    "@angular/forms": "npm:@neverendingsupport/angular@11.2.14-forms-11.2.19",
-    "@angular/localize": "npm:@neverendingsupport/angular@11.2.14-localize-11.2.19",
-    "@angular/platform-browser": "npm:@neverendingsupport/angular@11.2.14-platform-browser-11.2.19",
-    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@11.2.14-platform-browser-dynamic-11.2.19",
-    "@angular/platform-server": "npm:@neverendingsupport/angular@11.2.14-platform-server-11.2.19",
-    "@angular/router": "npm:@neverendingsupport/angular@11.2.14-router-11.2.19",
-    "@angular/service-worker": "npm:@neverendingsupport/angular@11.2.14-service-worker-11.2.19",
-    "@angular/upgrade": "npm:@neverendingsupport/angular@11.2.14-upgrade-11.2.19",
+    "@angular/animations": "npm:@neverendingsupport/angular@11.2.14-trial-animations",
+    "@angular/bazel": "npm:@neverendingsupport/angular@11.2.14-trial-bazel",
+    "@angular/common": "npm:@neverendingsupport/angular@11.2.14-trial-common",
+    "@angular/compiler": "npm:@neverendingsupport/angular@11.2.14-trial-compiler",
+    "@angular/core": "npm:@neverendingsupport/angular@11.2.14-trial-core",
+    "@angular/elements": "npm:@neverendingsupport/angular@11.2.14-trial-elements",
+    "@angular/forms": "npm:@neverendingsupport/angular@11.2.14-trial-forms",
+    "@angular/localize": "npm:@neverendingsupport/angular@11.2.14-trial-localize",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular@11.2.14-trial-platform-browser",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@11.2.14-trial-platform-browser-dynamic",
+    "@angular/platform-server": "npm:@neverendingsupport/angular@11.2.14-trial-platform-server",
+    "@angular/router": "npm:@neverendingsupport/angular@11.2.14-trial-router",
+    "@angular/service-worker": "npm:@neverendingsupport/angular@11.2.14-trial-service-worker",
+    "@angular/upgrade": "npm:@neverendingsupport/angular@11.2.14-trial-upgrade",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
@@ -44,18 +44,9 @@
   "devDependencies": {
     "@neverendingsupport/angular-tools": "1.1.3",
     "@angular/cli": "npm:@neverendingsupport/angular-cli@11.2.19-cli-11.2.21",
-    "@angular/pwa": "npm:@neverendingsupport/angular-cli@11.2.19-pwa-11.2.21",
-    "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@11.2.19-webpack-11.2.21",
-    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@11.2.19-architect-11.2.21",
-    "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-cli@11.2.19-architect-cli-11.2.21",
     "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@11.2.19-build-angular-11.2.21",
-    "@angular-devkit/build-optimizer": "npm:@neverendingsupport/angular-cli@11.2.19-build-optimizer-11.2.21",
-    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@11.2.19-build-webpack-11.2.21",
-    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@11.2.19-core-11.2.21",
-    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@11.2.19-schematics-11.2.21",
-    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@11.2.19-schematics-cli-11.2.21",
-    "@angular/compiler-cli": "npm:@neverendingsupport/angular@11.2.14-compiler-cli-11.2.19",
-    "@angular/language-service": "npm:@neverendingsupport/angular@11.2.14-language-service-11.2.19",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular@11.2.14-trial-compiler-cli",
+    "@angular/language-service": "npm:@neverendingsupport/angular@11.2.14-trial-language-service",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.2",
     "@types/marked": "^4.0.8",
@@ -76,86 +67,53 @@
     "typescript": "~4.1.2"
   },
   "overrides": {
-    "@angular/cli": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-cli-11.2.21"
-    },
-    "@angular/pwa": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-pwa-11.2.21"
-    },
-    "@angular-devkit/architect": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-architect-11.2.21"
-    },
-    "@angular-devkit/architect-cli": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-architect-cli-11.2.21"
-    },
-    "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-build-angular-11.2.21"
-    },
-    "@angular-devkit/build-optimizer": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-build-optimizer-11.2.21"
-    },
-    "@angular-devkit/build-webpack": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-build-webpack-11.2.21"
-    },
-    "@angular-devkit/core": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-core-11.2.21"
-    },
-    "@angular-devkit/schematics": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-schematics-11.2.21"
-    },
-    "@angular-devkit/schematics-cli": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-schematics-cli-11.2.21"
-    },
-    "@ngtools/webpack": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-webpack-11.2.21"
-    },
     "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-animations-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-animations"
     },
     "@angular/bazel": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-bazel-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-bazel"
     },
     "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-common-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-common"
     },
     "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-compiler-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-compiler"
     },
     "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-compiler-cli-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-compiler-cli"
     },
     "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-core-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-core"
     },
     "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-elements-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-elements"
     },
     "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-forms-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-forms"
     },
     "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-language-service-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-language-service"
     },
     "@angular/localize": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-localize-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-localize"
     },
     "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-platform-browser-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-platform-browser"
     },
     "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-platform-browser-dynamic-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-platform-browser-dynamic"
     },
     "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-platform-server-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-platform-server"
     },
     "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-router-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-router"
     },
     "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-service-worker-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-service-worker"
     },
     "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-upgrade-11.2.19"
+      ".": "npm:@neverendingsupport/angular@11.2.14-trial-upgrade"
     }
   }
 }
