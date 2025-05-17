@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@angular/cli": "13.3.11-cli",
-    "@angular-devkit/build-angular": "13.3.11-build-angular",
+    "@angular-devkit/build-angular": "13.3.11",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@13.4.0-trial-compiler-cli",
     "@angular/language-service": "npm:@neverendingsupport/angular@13.4.0-trial-language-service",
     "@types/jasmine": "~3.6.0",
