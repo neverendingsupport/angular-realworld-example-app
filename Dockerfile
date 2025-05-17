@@ -34,7 +34,11 @@ ENV PATH $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 # ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command.
 ARG NES_AUTH_TOKEN
 
-# Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
+# Dev: Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
+# RUN echo "@neverendingsupport:registry=https://registry.dev.nes.herodevs.com/npm/pkg/" > .npmrc && \
+# echo "//registry.dev.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
+
+# Prod: Use the shell form to dynamically create the .npmrc file using the argument (NES_AUTH_TOKEN)
 RUN echo "@neverendingsupport:registry=https://registry.nes.herodevs.com/npm/pkg/" > .npmrc && \
     echo "//registry.nes.herodevs.com/npm/pkg/:_authToken=${NES_AUTH_TOKEN}" >> .npmrc
 
