@@ -39,7 +39,8 @@
   },
   "devDependencies": {
     "@angular/cli": "15.2.11",
-   "@angular/compiler-cli": "npm:@neverendingsupport/angular@15.2.10-trial-compiler-cli",
+    "@angular-devkit/build-angular": "16.2.16",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular@15.2.10-trial-compiler-cli",
     "@angular/language-service": "npm:@neverendingsupport/angular@15.2.10-trial-language-service",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.2",
