@@ -26,7 +26,6 @@
     "@angular/core": "npm:@neverendingsupport/angular@8.2.14-trial-core",
     "@angular/elements": "npm:@neverendingsupport/angular@8.2.14-trial-elements",
     "@angular/forms": "npm:@neverendingsupport/angular@8.2.14-trial-forms",
-    "@angular/http": "npm:@neverendingsupport/angular@8.2.14-trial-http",
     "@angular/platform-browser": "npm:@neverendingsupport/angular@8.2.14-trial-platform-browser",
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@8.2.14-trial-platform-browser-dynamic",
     "@angular/platform-server": "npm:@neverendingsupport/angular@8.2.14-trial-platform-server",
@@ -44,8 +43,8 @@
   "devDependencies": {
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@8.2.14-trial-compiler-cli",
     "@angular/language-service": "npm:@neverendingsupport/angular@8.2.14-trial-language-service",
-    "@angular/cli": "8.3.29-cli",
-    "@angular-devkit/build-angular": "8.3.29",
+    "@angular-devkit/build-angular": "~0.803.29",
+    "@angular/cli": "~8.3.29",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/marked": "^4.0.8",
@@ -85,9 +84,6 @@
     },
     "@angular/forms": {
       ".": "npm:@neverendingsupport/angular@8.2.14-trial-forms"
-    },
-    "@angular/http": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-trial-http"
     },
     "@angular/language-service": {
       ".": "npm:@neverendingsupport/angular@8.2.14-trial-language-service"
