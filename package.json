@@ -37,8 +37,17 @@
     "zone.js": "~0.13.3"
   },
   "devDependencies": {
-    "@angular/cli": "16.2.16",
-    "@angular-devkit/build-angular": "16.2.16",
+    "@angular/cli": "npm:@neverendingsupport/angular-cli@16.2.16-trial-cli",
+    "@angular/create": "npm:@neverendingsupport/angular-cli@16.2.16-trial-create",
+    "@angular/pwa": "npm:@neverendingsupport/angular-cli@16.2.16-trial-pwa",
+    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@0.1602.16-trial-architect",
+    "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-cli@0.1602.16-trial-architect-cli",
+    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@16.2.16-trial-build-angular",
+    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@0.1602.16-trial-build-webpack",
+    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@16.2.16-trial-core",
+    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@16.2.16-trial-schematics",
+    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@16.2.16-trial-schematics-cli",
+    "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@16.2.16-trial-webpack",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@16.2.12-trial-compiler-cli",
     "@angular/language-service": "npm:@neverendingsupport/angular@16.2.12-trial-language-service",
     "@types/jasmine": "~4.3.0",
@@ -99,6 +108,39 @@
     },
     "@angular/upgrade": {
       ".": "npm:@neverendingsupport/angular@16.2.12-trial-upgrade"
+    },
+    "@angular/cli": {
+      ".": "npm:@neverendingsupport/angular-cli@16.2.16-trial-cli"
+    },
+    "@angular/create": {
+      ".": "npm:@neverendingsupport/angular-cli@16.2.16-trial-create"
+    },
+    "@angular/pwa": {
+      ".": "npm:@neverendingsupport/angular-cli@16.2.16-trial-pwa"
+    },
+    "@angular-devkit/architect": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1602.16-trial-architect"
+    },
+    "@angular-devkit/architect-cli": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1602.16-trial-architect-cli"
+    },
+    "@angular-devkit/build-angular": {
+      ".": "npm:@neverendingsupport/angular-cli@16.2.16-trial-build-angular"
+    },
+    "@angular-devkit/build-webpack": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1602.16-trial-build-webpack"
+    },
+    "@angular-devkit/core": {
+      ".": "npm:@neverendingsupport/angular-cli@16.2.16-trial-core"
+    },
+    "@angular-devkit/schematics": {
+      ".": "npm:@neverendingsupport/angular-cli@16.2.16-trial-schematics"
+    },
+    "@angular-devkit/schematics-cli": {
+      ".": "npm:@neverendingsupport/angular-cli@16.2.16-trial-schematics-cli"
+    },
+    "@ngtools/webpack": {
+      ".": "npm:@neverendingsupport/angular-cli@16.2.16-trial-webpack"
     }
   },
   "lint-staged": {
