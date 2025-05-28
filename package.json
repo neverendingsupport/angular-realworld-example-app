@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "./node_modules/.bin/ng",
-    "docker": "docker build --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v10 . && docker run -d -p 4200:4200 angular-v10",
+    "docker": "docker build --no-cache --build-arg NES_AUTH_TOKEN=$npm_config_nes_auth_token -t angular-v10 . && docker run -d -p 4200:4200 angular-v10",
     "start": "ng serve",
     "build": "ng build --configuration production --base-href ./ && cp CNAME dist/CNAME",
     "build-prod": "ng build --configuration production",
@@ -44,8 +44,17 @@
   },
   "devDependencies": {
     "@neverendingsupport/angular-tools": "1.1.3",
-    "@angular-devkit/build-angular": "~0.1002.1",
-    "@angular/cli": "~10.2.4",
+    "@angular/cli": "npm:@neverendingsupport/angular-cli@10.2.4-trial-cli",
+    "@angular/pwa": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-pwa",
+    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-architect",
+    "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-architect-cli",
+    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-build-angular",
+    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-build-webpack",
+    "@angular-devkit/build-optimizer": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-build-optimizer",
+    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@10.2.4-trial-core",
+    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@10.2.4-trial-schematics",
+    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-schematics-cli",
+    "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@10.2.4-trial-webpack",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@10.2.5-trial-compiler-cli",
     "@angular/language-service": "npm:@neverendingsupport/angular@10.2.5-trial-language-service",
     "@types/jasmine": "~3.5.0",
@@ -118,6 +127,39 @@
     },
     "@angular/upgrade": {
       ".": "npm:@neverendingsupport/angular@10.2.5-trial-upgrade"
+    },
+    "@angular/cli": {
+      ".": "npm:@neverendingsupport/angular-cli@10.2.4-trial-cli"
+    },
+    "@angular/pwa": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-pwa"
+    },
+    "@angular-devkit/architect": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-architect"
+    },
+    "@angular-devkit/architect-cli": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-architect-cli"
+    },
+    "@angular-devkit/build-angular": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-build-angular"
+    },
+    "@angular-devkit/build-webpack": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-build-webpack"
+    },
+    "@angular-devkit/core": {
+      ".": "npm:@neverendingsupport/angular-cli@10.2.4-trial-core"
+    },
+    "@angular-devkit/schematics": {
+      ".": "npm:@neverendingsupport/angular-cli@10.2.4-trial-schematics"
+    },
+    "@angular-devkit/schematics-cli": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-schematics-cli"
+    },
+    "@ngtools/webpack": {
+      ".": "npm:@neverendingsupport/angular-cli@10.2.4-trial-webpack"
+    },
+    "@angular-devkit/build-optimizer": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1002.4-trial-build-optimizer"
     }
   }
 }
