@@ -48,6 +48,7 @@
     "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-cli@0.1202.18-trial-architect-cli",
     "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@12.2.18-trial-build-angular",
     "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@0.1202.18-trial-build-webpack",
+    "@angular-devkit/build-optimizer": "npm:@neverendingsupport/angular-cli@0.1202.18-trial-build-optimizer",
     "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@12.2.18-trial-core",
     "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@12.2.18-trial-schematics",
     "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@12.2.18-trial-schematics-cli",
@@ -106,6 +107,9 @@
     },
     "@angular-devkit/build-webpack": {
       ".": "npm:@neverendingsupport/angular-cli@0.1202.18-trial-build-webpack"
+    },
+    "@angular-devkit/build-optimizer": {
+      ".": "npm:@neverendingsupport/angular-cli@0.1202.18-trial-build-optimizer"
     },
     "@angular-devkit/core": {
       ".": "npm:@neverendingsupport/angular-cli@12.2.18-trial-core"
