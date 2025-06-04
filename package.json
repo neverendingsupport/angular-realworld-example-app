@@ -46,7 +46,7 @@
     "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-devkit-build-webpack@0.1602.16-angular-cli-16.2.18",
     "@angular-devkit/core": "npm:@neverendingsupport/angular-devkit-core@16.2.16-angular-cli-16.2.18",
     "@angular-devkit/schematics": "npm:@neverendingsupport/angular-devkit-schematics-cli@16.2.16-angular-cli-16.2.18",
-    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@16.2.16-schematics-cli-16.2.17",
+    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-devkit-schematics-cli@16.2.16-angular-cli-16.2.18",
     "@ngtools/webpack": "npm:@neverendingsupport/ngtools-webpack@16.2.16-angular-cli-16.2.18",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@16.2.12-compiler-cli-16.2.15",
     "@angular/language-service": "npm:@neverendingsupport/angular@16.2.12-language-service-16.2.15",
@@ -137,7 +137,7 @@
       ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@16.2.16-angular-cli-16.2.18"
     },
     "@angular-devkit/schematics-cli": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-schematics-cli-16.2.17"
+      ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@16.2.16-angular-cli-16.2.18"
     },
     "@ngtools/webpack": {
       ".": "npm:@neverendingsupport/ngtools-webpack@16.2.16-angular-cli-16.2.18"
