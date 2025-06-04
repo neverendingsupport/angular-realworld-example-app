@@ -64,84 +64,32 @@
     "typescript": "~5.1.6"
   },
   "overrides": {
-    "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-animations-16.2.15"
-    },
-    "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-common-16.2.15"
-    },
-    "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-compiler-16.2.15"
-    },
-    "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-compiler-cli-16.2.15"
-    },
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-core-16.2.15"
-    },
-    "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-elements-16.2.15"
-    },
-    "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-forms-16.2.15"
-    },
-    "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-language-service-16.2.15"
-    },
-    "@angular/localize": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-localize-16.2.15"
-    },
-    "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-16.2.15"
-    },
-    "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-dynamic-16.2.15"
-    },
-    "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-platform-server-16.2.15"
-    },
-    "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-router-16.2.15"
-    },
-    "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-service-worker-16.2.15"
-    },
-    "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@16.2.12-upgrade-16.2.15"
-    },
-    "@angular/cli": {
-      ".": "npm:@neverendingsupport/angular-cli@16.2.16-angular-cli-16.2.18"
-    },
-    "@angular/create": {
-      ".": "npm:@neverendingsupport/angular-create@16.2.16-angular-cli-16.2.18"
-    },
-    "@angular/pwa": {
-      ".": "npm:@neverendingsupport/angular-pwa@16.2.16-angular-cli-16.2.18"
-    },
-    "@angular-devkit/architect": {
-      ".": "npm:@neverendingsupport/angular-devkit-architect@0.1602.16-angular-cli-16.2.18"
-    },
-    "@angular-devkit/architect-cli": {
-      ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.1602.16-angular-cli-16.2.18"
-    },
-    "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-angular@16.2.16-angular-cli-16.2.18"
-    },
-    "@angular-devkit/build-webpack": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.1602.16-angular-cli-16.2.18"
-    },
-    "@angular-devkit/core": {
-      ".": "npm:@neverendingsupport/angular-devkit-core@16.2.16-angular-cli-16.2.18"
-    },
-    "@angular-devkit/schematics": {
-      ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@16.2.16-angular-cli-16.2.18"
-    },
-    "@angular-devkit/schematics-cli": {
-      ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@16.2.16-angular-cli-16.2.18"
-    },
-    "@ngtools/webpack": {
-      ".": "npm:@neverendingsupport/ngtools-webpack@16.2.16-angular-cli-16.2.18"
-    }
+    "@angular/animations": { ".": "npm:@neverendingsupport/angular@16.2.12-animations-16.2.15" },
+    "@angular/common": { ".": "npm:@neverendingsupport/angular@16.2.12-common-16.2.15" },
+    "@angular/compiler": { ".": "npm:@neverendingsupport/angular@16.2.12-compiler-16.2.15" },
+    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular@16.2.12-compiler-cli-16.2.15" },
+    "@angular/core": { ".": "npm:@neverendingsupport/angular@16.2.12-core-16.2.15" },
+    "@angular/elements": { ".": "npm:@neverendingsupport/angular@16.2.12-elements-16.2.15" },
+    "@angular/forms": { ".": "npm:@neverendingsupport/angular@16.2.12-forms-16.2.15" },
+    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@16.2.12-language-service-16.2.15" },
+    "@angular/localize": { ".": "npm:@neverendingsupport/angular@16.2.12-localize-16.2.15" },
+    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-16.2.15" },
+    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular@16.2.12-platform-browser-dynamic-16.2.15" },
+    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@16.2.12-platform-server-16.2.15" },
+    "@angular/router": { ".": "npm:@neverendingsupport/angular@16.2.12-router-16.2.15" },
+    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@16.2.12-service-worker-16.2.15" },
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@16.2.12-upgrade-16.2.15" },
+    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@16.2.16-angular-cli-16.2.18" },
+    "@angular/create": { ".": "npm:@neverendingsupport/angular-create@16.2.16-angular-cli-16.2.18" },
+    "@angular/pwa": { ".": "npm:@neverendingsupport/angular-pwa@16.2.16-angular-cli-16.2.18" },
+    "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-devkit-architect@0.1602.16-angular-cli-16.2.18" },
+    "@angular-devkit/architect-cli": { ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.1602.16-angular-cli-16.2.18" },
+    "@angular-devkit/build-angular": { ".": "npm:@neverendingsupport/angular-devkit-build-angular@16.2.16-angular-cli-16.2.18" },
+    "@angular-devkit/build-webpack": { ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.1602.16-angular-cli-16.2.18" },
+    "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-devkit-core@16.2.16-angular-cli-16.2.18" },
+    "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@16.2.16-angular-cli-16.2.18" },
+    "@angular-devkit/schematics-cli": { ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@16.2.16-angular-cli-16.2.18" },
+    "@ngtools/webpack": { ".": "npm:@neverendingsupport/ngtools-webpack@16.2.16-angular-cli-16.2.18" }
   },
   "lint-staged": {
     "*.{ts,html,css,json,md}": "prettier --write"
