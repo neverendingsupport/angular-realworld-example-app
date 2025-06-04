@@ -76,86 +76,32 @@
     "typescript": "~4.1.2"
   },
   "overrides": {
-    "@angular/cli": {
-      ".": "npm:@neverendingsupport/angular-cli@11.2.19-angular-cli-11.2.22"
-    },
-    "@angular/pwa": {
-      ".": "npm:@neverendingsupport/angular-pwa@0.1102.19-angular-cli-11.2.22"
-    },
-    "@angular-devkit/architect": {
-      ".": "npm:@neverendingsupport/angular-devkit-architect@0.1102.19-angular-cli-11.2.22"
-    },
-    "@angular-devkit/architect-cli": {
-      ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.1102.19-angular-cli-11.2.22"
-    },
-    "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-angular@0.1102.19-angular-cli-11.2.22"
-    },
-    "@angular-devkit/build-optimizer": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-optimizer@0.1102.19-angular-cli-11.2.22"
-    },
-    "@angular-devkit/build-webpack": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.1102.19-angular-cli-11.2.22"
-    },
-    "@angular-devkit/core": {
-      ".": "npm:@neverendingsupport/angular-devkit-core@11.2.19-angular-cli-11.2.22"
-    },
-    "@angular-devkit/schematics": {
-      ".": "npm:@neverendingsupport/angular-devkit-schematics@11.2.19-angular-cli-11.2.22"
-    },
-    "@angular-devkit/schematics-cli": {
-      ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@0.1102.19-angular-cli-11.2.22"
-    },
-    "@ngtools/webpack": {
-      ".": "npm:@neverendingsupport/ngtools-webpack@11.2.19-angular-cli-11.2.22"
-    },
-    "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-animations-11.2.19"
-    },
-    "@angular/bazel": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-bazel-11.2.19"
-    },
-    "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-common-11.2.19"
-    },
-    "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-compiler-11.2.19"
-    },
-    "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-compiler-cli-11.2.19"
-    },
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-core-11.2.19"
-    },
-    "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-elements-11.2.19"
-    },
-    "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-forms-11.2.19"
-    },
-    "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-language-service-11.2.19"
-    },
-    "@angular/localize": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-localize-11.2.19"
-    },
-    "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-platform-browser-11.2.19"
-    },
-    "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-platform-browser-dynamic-11.2.19"
-    },
-    "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-platform-server-11.2.19"
-    },
-    "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-router-11.2.19"
-    },
-    "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-service-worker-11.2.19"
-    },
-    "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@11.2.14-upgrade-11.2.19"
-    }
+    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@11.2.19-angular-cli-11.2.22" },
+    "@angular/pwa": { ".": "npm:@neverendingsupport/angular-pwa@0.1102.19-angular-cli-11.2.22" },
+    "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-devkit-architect@0.1102.19-angular-cli-11.2.22" },
+    "@angular-devkit/architect-cli": { ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.1102.19-angular-cli-11.2.22" },
+    "@angular-devkit/build-angular": { ".": "npm:@neverendingsupport/angular-devkit-build-angular@0.1102.19-angular-cli-11.2.22" },
+    "@angular-devkit/build-optimizer": { ".": "npm:@neverendingsupport/angular-devkit-build-optimizer@0.1102.19-angular-cli-11.2.22" },
+    "@angular-devkit/build-webpack": { ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.1102.19-angular-cli-11.2.22" },
+    "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-devkit-core@11.2.19-angular-cli-11.2.22" },
+    "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-devkit-schematics@11.2.19-angular-cli-11.2.22" },
+    "@angular-devkit/schematics-cli": { ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@0.1102.19-angular-cli-11.2.22" },
+    "@ngtools/webpack": { ".": "npm:@neverendingsupport/ngtools-webpack@11.2.19-angular-cli-11.2.22" },
+    "@angular/animations": { ".": "npm:@neverendingsupport/angular@11.2.14-animations-11.2.19" },
+    "@angular/bazel": { ".": "npm:@neverendingsupport/angular@11.2.14-bazel-11.2.19" },
+    "@angular/common": { ".": "npm:@neverendingsupport/angular@11.2.14-common-11.2.19" },
+    "@angular/compiler": { ".": "npm:@neverendingsupport/angular@11.2.14-compiler-11.2.19" },
+    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular@11.2.14-compiler-cli-11.2.19" },
+    "@angular/core": { ".": "npm:@neverendingsupport/angular@11.2.14-core-11.2.19" },
+    "@angular/elements": { ".": "npm:@neverendingsupport/angular@11.2.14-elements-11.2.19" },
+    "@angular/forms": { ".": "npm:@neverendingsupport/angular@11.2.14-forms-11.2.19" },
+    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@11.2.14-language-service-11.2.19" },
+    "@angular/localize": { ".": "npm:@neverendingsupport/angular@11.2.14-localize-11.2.19" },
+    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular@11.2.14-platform-browser-11.2.19" },
+    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular@11.2.14-platform-browser-dynamic-11.2.19" },
+    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@11.2.14-platform-server-11.2.19" },
+    "@angular/router": { ".": "npm:@neverendingsupport/angular@11.2.14-router-11.2.19" },
+    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@11.2.14-service-worker-11.2.19" },
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@11.2.14-upgrade-11.2.19" }
   }
 }
