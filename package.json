@@ -41,8 +41,17 @@
     "zone.js": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.17"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.13",
-    "@angular/cli": "~9.1.13",
+    "@angular/cli": "npm:@neverendingsupport/angular-cli@9.1.15-angular-cli-9.1.18",
+    "@angular/pwa": "npm:@neverendingsupport/angular-pwa@0.901.15-angular-cli-9.1.18",
+    "@angular-devkit/architect": "npm:@neverendingsupport/angular-devkit-architect@0.901.15-angular-cli-9.1.18",
+    "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-devkit-architect-cli@0.901.15-angular-cli-9.1.18",
+    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-devkit-build-angular@0.901.15-angular-cli-9.1.18",
+    "@angular-devkit/build-optimizer": "npm:@neverendingsupport/angular-devkit-build-optimizer@0.901.15-angular-cli-9.1.18",
+    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-devkit-build-webpack@0.901.15-angular-cli-9.1.18",
+    "@angular-devkit/core": "npm:@neverendingsupport/angular-devkit-core@9.1.15-angular-cli-9.1.18",
+    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-devkit-schematics@9.1.15-angular-cli-9.1.18",
+    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-devkit-schematics-cli@0.901.15-angular-cli-9.1.18",
+    "@ngtools/webpack": "npm:@neverendingsupport/ngtools-webpack@9.1.15-angular-cli-9.1.18",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@9.1.13-compiler-cli-9.1.17",
     "@types/jasmine": "3.8.0",
     "@types/jasminewd2": "~2.0.3",
@@ -105,6 +114,39 @@
     },
     "zone.js": {
       ".": "npm:@neverendingsupport/angular@9.1.13-zone.js-9.1.17"
+    },
+    "@angular/cli": {
+    ".": "npm:@neverendingsupport/angular-cli@9.1.15-angular-cli-9.1.18"
+    },
+    "@angular/pwa": {
+      ".": "npm:@neverendingsupport/angular-pwa@0.901.15-angular-cli-9.1.18"
+    },
+    "@angular-devkit/architect": {
+      ".": "npm:@neverendingsupport/angular-devkit-architect@0.901.15-angular-cli-9.1.18"
+    },
+    "@angular-devkit/architect-cli": {
+      ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.901.15-angular-cli-9.1.18"
+    },
+    "@angular-devkit/build-angular": {
+      ".": "npm:@neverendingsupport/angular-devkit-build-angular@0.901.15-angular-cli-9.1.18"
+    },
+    "@angular-devkit/build-optimizer": {
+      ".": "npm:@neverendingsupport/angular-devkit-build-optimizer@0.901.15-angular-cli-9.1.18"
+    },
+    "@angular-devkit/build-webpack": {
+      ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.901.15-angular-cli-9.1.18"
+    },
+    "@angular-devkit/core": {
+      ".": "npm:@neverendingsupport/angular-devkit-core@9.1.15-angular-cli-9.1.18"
+    },
+    "@angular-devkit/schematics": {
+      ".": "npm:@neverendingsupport/angular-devkit-schematics@9.1.15-angular-cli-9.1.18"
+    },
+    "@angular-devkit/schematics-cli": {
+      ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@0.901.15-angular-cli-9.1.18"
+    },
+    "@ngtools/webpack": {
+      ".": "npm:@neverendingsupport/ngtools-webpack@9.1.15-angular-cli-9.1.18"
     }
   }
 }
