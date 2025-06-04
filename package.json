@@ -43,6 +43,7 @@
     "@angular/cli": "npm:@neverendingsupport/angular-cli@7.3.10-angular-cli-7.3.13",
     "@angular/pwa": "npm:@neverendingsupport/angular-pwa@0.13.10-angular-cli-7.3.13",
     "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-devkit-build-angular@0.13.10-angular-cli-7.3.13",
+    "@angular-devkit/build-ng-packagr": "npm:@neverendingsupport/angular-devkit-build-ng-packagr@0.13.10-angular-cli-7.3.13",
     "@angular-devkit/architect": "npm:@neverendingsupport/angular-devkit-architect@0.13.10-angular-cli-7.3.13",
     "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-devkit-architect-cli@0.13.10-angular-cli-7.3.13",
     "@angular-devkit/build-optimizer": "npm:@neverendingsupport/angular-devkit-build-optimizer@0.13.10-angular-cli-7.3.13",
@@ -71,67 +72,30 @@
     "typescript": "~3.2.2"
   },
   "overrides": {
-    "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-animations-7.2.20"
-    },
-    "@angular/bazel": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-bazel-7.2.20"
-    },
-    "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-common-7.2.20"
-    },
-    "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-compiler-7.2.20"
-    },
-    "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-compiler-cli-7.2.20"
-    },
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-core-7.2.20"
-    },
-    "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-elements-7.2.20"
-    },
-    "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-forms-7.2.20"
-    },
-    "@angular/http": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-http-7.2.20"
-    },
-    "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-language-service-7.2.20"
-    },
-    "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-platform-browser-7.2.20"
-    },
-    "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-platform-browser-dynamic-7.2.20"
-    },
-    "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-platform-server-7.2.20"
-    },
-    "@angular/platform-webworker": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-7.2.20"
-    },
-    "@angular/platform-webworker-dynamic": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-dynamic-7.2.20"
-    },
-    "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-router-7.2.20"
-    },
-    "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-service-worker-7.2.20"
-    },
-    "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@7.2.16-upgrade-7.2.20"
-    },
+    "@angular/animations": { ".": "npm:@neverendingsupport/angular@7.2.16-animations-7.2.20" },
+    "@angular/bazel": { ".": "npm:@neverendingsupport/angular@7.2.16-bazel-7.2.20" },
+    "@angular/common": { ".": "npm:@neverendingsupport/angular@7.2.16-common-7.2.20" },
+    "@angular/compiler": { ".": "npm:@neverendingsupport/angular@7.2.16-compiler-7.2.20" },
+    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular@7.2.16-compiler-cli-7.2.20" },
+    "@angular/core": { ".": "npm:@neverendingsupport/angular@7.2.16-core-7.2.20" },
+    "@angular/elements": { ".": "npm:@neverendingsupport/angular@7.2.16-elements-7.2.20" },
+    "@angular/forms": { ".": "npm:@neverendingsupport/angular@7.2.16-forms-7.2.20" },
+    "@angular/http": { ".": "npm:@neverendingsupport/angular@7.2.16-http-7.2.20" },
+    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@7.2.16-language-service-7.2.20" },
+    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-browser-7.2.20" },
+    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-browser-dynamic-7.2.20" },
+    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-server-7.2.20" },
+    "@angular/platform-webworker": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-7.2.20" },
+    "@angular/platform-webworker-dynamic": { ".": "npm:@neverendingsupport/angular@7.2.16-platform-webworker-dynamic-7.2.20" },
+    "@angular/router": { ".": "npm:@neverendingsupport/angular@7.2.16-router-7.2.20" },
+    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@7.2.16-service-worker-7.2.20" },
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@7.2.16-upgrade-7.2.20" },
     "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@7.3.10-angular-cli-7.3.13"},
     "@angular/pwa": { ".": "npm:@neverendingsupport/angular-pwa@0.13.10-angular-cli-7.3.13"},
     "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-devkit-architect@0.13.10-angular-cli-7.3.13"},
     "@angular-devkit/architect-cli": { ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.13.10-angular-cli-7.3.13"},
-    "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-angular@0.13.10-angular-cli-7.3.13"
-    },
+    "@angular-devkit/build-angular": { ".": "npm:@neverendingsupport/angular-devkit-build-angular@0.13.10-angular-cli-7.3.13" },
+    "@angular-devkit/build-ng-packagr": { ".": "npm:@neverendingsupport/angular-devkit-build-ng-packagr@0.13.10-angular-cli-7.3.13" },
     "@angular-devkit/build-optimizer": { ".": "npm:@neverendingsupport/angular-devkit-build-optimizer@0.13.10-angular-cli-7.3.13"},
     "@angular-devkit/build-webpack": { ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.13.10-angular-cli-7.3.13"},
     "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-devkit-core@7.3.10-angular-cli-7.3.13"},
