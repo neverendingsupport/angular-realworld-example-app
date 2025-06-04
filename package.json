@@ -75,92 +75,35 @@
     "typescript": "~3.5.3"
   },
   "overrides": {
-    "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-animations-8.2.18"
-    },
-    "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-common-8.2.18"
-    },
-    "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-compiler-8.2.18"
-    },
-    "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-compiler-cli-8.2.18"
-    },
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-core-8.2.18"
-    },
-    "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-elements-8.2.18"
-    },
-    "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-forms-8.2.18"
-    },
-    "@angular/http": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-http-8.2.18"
-    },
-    "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-language-service-8.2.18"
-    },
-    "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-platform-browser-8.2.18"
-    },
-    "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-platform-browser-dynamic-8.2.18"
-    },
-    "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-platform-server-8.2.18"
-    },
-    "@angular/platform-webworker": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-platform-webworker-8.2.18"
-    },
-    "@angular/platform-webworker-dynamic": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-platform-webworker-dynamic-8.2.18"
-    },
-    "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-router-8.2.18"
-    },
-    "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-service-worker-8.2.18"
-    },
-    "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@8.2.14-upgrade-8.2.18"
-    },
-    "@angular/cli": {
-      ".": "npm:@neverendingsupport/angular-cli@8.3.29-angular-cli-8.3.33"
-    },
-    "@angular/pwa": {
-      ".": "npm:@neverendingsupport/angular-pwa@0.803.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/architect": {
-      ".": "npm:@neverendingsupport/angular-devkit-architect@0.803.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/architect-cli": {
-      ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.803.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-angular@0.803.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/build-ng-packagr": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-ng-packagr@0.803.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/build-optimizer": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-optimizer@0.803.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/build-webpack": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.803.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/core": {
-      ".": "npm:@neverendingsupport/angular-devkit-core@8.3.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/schematics": {
-      ".": "npm:@neverendingsupport/angular-devkit-schematics@8.3.29-angular-cli-8.3.33"
-    },
-    "@angular-devkit/schematics-cli": {
-      ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@0.803.29-angular-cli-8.3.33"
-    },
-    "@ngtools/webpack": {
-      ".": "npm:@neverendingsupport/ngtools-webpack@8.3.29-angular-cli-8.3.33"
+    "@angular/animations": { ".": "npm:@neverendingsupport/angular@8.2.14-animations-8.2.18" },
+    "@angular/common": { ".": "npm:@neverendingsupport/angular@8.2.14-common-8.2.18" },
+    "@angular/compiler": { ".": "npm:@neverendingsupport/angular@8.2.14-compiler-8.2.18" },
+    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular@8.2.14-compiler-cli-8.2.18" },
+    "@angular/core": { ".": "npm:@neverendingsupport/angular@8.2.14-core-8.2.18" },
+    "@angular/elements": { ".": "npm:@neverendingsupport/angular@8.2.14-elements-8.2.18" },
+    "@angular/forms": { ".": "npm:@neverendingsupport/angular@8.2.14-forms-8.2.18" },
+    "@angular/http": { ".": "npm:@neverendingsupport/angular@8.2.14-http-8.2.18" },
+    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@8.2.14-language-service-8.2.18" },
+    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular@8.2.14-platform-browser-8.2.18" },
+    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular@8.2.14-platform-browser-dynamic-8.2.18" },
+    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@8.2.14-platform-server-8.2.18" },
+    "@angular/platform-webworker": { ".": "npm:@neverendingsupport/angular@8.2.14-platform-webworker-8.2.18" },
+    "@angular/platform-webworker-dynamic": { ".": "npm:@neverendingsupport/angular@8.2.14-platform-webworker-dynamic-8.2.18" },
+    "@angular/router": { ".": "npm:@neverendingsupport/angular@8.2.14-router-8.2.18" },
+    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@8.2.14-service-worker-8.2.18" },
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@8.2.14-upgrade-8.2.18" },
+    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@8.3.29-angular-cli-8.3.33" },
+    "@angular/pwa": { ".": "npm:@neverendingsupport/angular-pwa@0.803.29-angular-cli-8.3.33" },
+    "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-devkit-architect@0.803.29-angular-cli-8.3.33" },
+    "@angular-devkit/architect-cli": { ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.803.29-angular-cli-8.3.33" },
+    "@angular-devkit/build-angular": { ".": "npm:@neverendingsupport/angular-devkit-build-angular@0.803.29-angular-cli-8.3.33" },
+    "@angular-devkit/build-ng-packagr": { ".": "npm:@neverendingsupport/angular-devkit-build-ng-packagr@0.803.29-angular-cli-8.3.33" },
+    "@angular-devkit/build-optimizer": { ".": "npm:@neverendingsupport/angular-devkit-build-optimizer@0.803.29-angular-cli-8.3.33" },
+    "@angular-devkit/build-webpack": { ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.803.29-angular-cli-8.3.33" },
+    "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-devkit-core@8.3.29-angular-cli-8.3.33" },
+    "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-devkit-schematics@8.3.29-angular-cli-8.3.33" },
+    "@angular-devkit/schematics-cli": { ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@0.803.29-angular-cli-8.3.33" },
+    "@ngtools/webpack": { ".": "npm:@neverendingsupport/ngtools-webpack@8.3.29-angular-cli-8.3.33"
     }
   }
 }
