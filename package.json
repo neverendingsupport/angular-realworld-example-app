@@ -70,87 +70,32 @@
     "typescript": "4.9.5"
   },
   "overrides": {
-    "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-animations-15.2.14"
-    },
-    "@angular/bazel": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-bazel-15.2.14"
-    },
-    "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-common-15.2.14"
-    },
-    "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-compiler-15.2.14"
-    },
-    "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-compiler-cli-15.2.14"
-    },
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-core-15.2.14"
-    },
-    "@angular/elements": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-elements-15.2.14"
-    },
-    "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-forms-15.2.14"
-    },
-    "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-language-service-15.2.14"
-    },
-    "@angular/localize": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-localize-15.2.14"
-    },
-    "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-platform-browser-15.2.14"
-    },
-    "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-platform-browser-dynamic-15.2.14"
-    },
-    "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-platform-server-15.2.14"
-    },
-    "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-router-15.2.14"
-    },
-    "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-service-worker-15.2.14"
-    },
-    "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@15.2.10-upgrade-15.2.14"
-    },
-
-    "@angular/cli": {
-      ".": "npm:@neverendingsupport/angular-cli@15.2.11-angular-cli-15.2.13"
-    },
-    "@angular/create": {
-      ".": "npm:@neverendingsupport/angular-create@15.2.11-angular-cli-15.2.13"
-    },
-    "@angular/pwa": {
-      ".": "npm:@neverendingsupport/angular-pwa@15.2.11-angular-cli-15.2.13"
-    },
-    "@angular-devkit/architect": {
-      ".": "npm:@neverendingsupport/angular-devkit-architect@0.1502.11-angular-cli-15.2.13"
-    },
-    "@angular-devkit/architect-cli": {
-      ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.1502.11-angular-cli-15.2.13"
-    },
-    "@angular-devkit/build-angular": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-angular@15.2.11-angular-cli-15.2.13"
-    },
-    "@angular-devkit/build-webpack": {
-      ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.1502.11-angular-cli-15.2.13"
-    },
-    "@angular-devkit/core": {
-      ".": "npm:@neverendingsupport/angular-devkit-core@15.2.11-angular-cli-15.2.13"
-    },
-    "@angular-devkit/schematics": {
-      ".": "npm:@neverendingsupport/angular-devkit-schematics@15.2.11-angular-cli-15.2.13"
-    },
-    "@angular-devkit/schematics-cli": {
-      ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@15.2.11-angular-cli-15.2.13"
-    },
-    "@ngtools/webpack": {
-      ".": "npm:@neverendingsupport/ngtools-webpack@15.2.11-angular-cli-15.2.13"
-    }
+    "@angular/animations": { ".": "npm:@neverendingsupport/angular@15.2.10-animations-15.2.14" },
+    "@angular/bazel": { ".": "npm:@neverendingsupport/angular@15.2.10-bazel-15.2.14" },
+    "@angular/common": { ".": "npm:@neverendingsupport/angular@15.2.10-common-15.2.14" },
+    "@angular/compiler": { ".": "npm:@neverendingsupport/angular@15.2.10-compiler-15.2.14" },
+    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular@15.2.10-compiler-cli-15.2.14" },
+    "@angular/core": { ".": "npm:@neverendingsupport/angular@15.2.10-core-15.2.14" },
+    "@angular/elements": { ".": "npm:@neverendingsupport/angular@15.2.10-elements-15.2.14" },
+    "@angular/forms": { ".": "npm:@neverendingsupport/angular@15.2.10-forms-15.2.14" },
+    "@angular/language-service": { ".": "npm:@neverendingsupport/angular@15.2.10-language-service-15.2.14" },
+    "@angular/localize": { ".": "npm:@neverendingsupport/angular@15.2.10-localize-15.2.14" },
+    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular@15.2.10-platform-browser-15.2.14" },
+    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular@15.2.10-platform-browser-dynamic-15.2.14" },
+    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@15.2.10-platform-server-15.2.14" },
+    "@angular/router": { ".": "npm:@neverendingsupport/angular@15.2.10-router-15.2.14" },
+    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@15.2.10-service-worker-15.2.14" },
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@15.2.10-upgrade-15.2.14" },
+    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@15.2.11-angular-cli-15.2.13" },
+    "@angular/create": { ".": "npm:@neverendingsupport/angular-create@15.2.11-angular-cli-15.2.13" },
+    "@angular/pwa": { ".": "npm:@neverendingsupport/angular-pwa@15.2.11-angular-cli-15.2.13" },
+    "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-devkit-architect@0.1502.11-angular-cli-15.2.13" },
+    "@angular-devkit/architect-cli": { ".": "npm:@neverendingsupport/angular-devkit-architect-cli@0.1502.11-angular-cli-15.2.13" },
+    "@angular-devkit/build-angular": { ".": "npm:@neverendingsupport/angular-devkit-build-angular@15.2.11-angular-cli-15.2.13" },
+    "@angular-devkit/build-webpack": { ".": "npm:@neverendingsupport/angular-devkit-build-webpack@0.1502.11-angular-cli-15.2.13" },
+    "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-devkit-core@15.2.11-angular-cli-15.2.13" },
+    "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-devkit-schematics@15.2.11-angular-cli-15.2.13" },
+    "@angular-devkit/schematics-cli": { ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@15.2.11-angular-cli-15.2.13" },
+    "@ngtools/webpack": { ".": "npm:@neverendingsupport/ngtools-webpack@15.2.11-angular-cli-15.2.13" }
   }
 }
