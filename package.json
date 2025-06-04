@@ -103,7 +103,6 @@
     "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-devkit-core@8.3.29-angular-cli-8.3.33" },
     "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-devkit-schematics@8.3.29-angular-cli-8.3.33" },
     "@angular-devkit/schematics-cli": { ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@0.803.29-angular-cli-8.3.33" },
-    "@ngtools/webpack": { ".": "npm:@neverendingsupport/ngtools-webpack@8.3.29-angular-cli-8.3.33"
-    }
+    "@ngtools/webpack": { ".": "npm:@neverendingsupport/ngtools-webpack@8.3.29-angular-cli-8.3.33" }
   }
 }
