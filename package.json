@@ -20,19 +20,19 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "npm:@neverendingsupport/angular@4.4.7-animations-4.4.10",
-    "@angular/common": "npm:@neverendingsupport/angular@4.4.7-common-4.4.10",
-    "@angular/compiler": "npm:@neverendingsupport/angular@4.4.7-compiler-4.4.10",
-    "@angular/core": "npm:@neverendingsupport/angular@4.4.7-core-4.4.10",
-    "@angular/forms": "npm:@neverendingsupport/angular@4.4.7-forms-4.4.10",
-    "@angular/http": "npm:@neverendingsupport/angular@4.4.7-http-4.4.10",
-    "@angular/platform-browser": "npm:@neverendingsupport/angular@4.4.7-platform-browser-4.4.10",
-    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@4.4.7-platform-browser-dynamic-4.4.10",
-    "@angular/platform-server": "npm:@neverendingsupport/angular@4.4.7-platform-server-4.4.10",
-    "@angular/platform-webworker": "npm:@neverendingsupport/angular@4.4.7-platform-webworker-4.4.10",
-    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular@4.4.7-platform-browser-dynamic-4.4.10",
-    "@angular/router": "npm:@neverendingsupport/angular@4.4.7-router-4.4.10",
-    "@angular/upgrade": "npm:@neverendingsupport/angular@4.4.7-upgrade-4.4.10",
+    "@angular/animations": "npm:@neverendingsupport/angular-animations@4.4.7-angular-4.4.11",
+    "@angular/common": "npm:@neverendingsupport/angular-common@4.4.7-angular-4.4.11",
+    "@angular/compiler": "npm:@neverendingsupport/angular-compiler@4.4.7-angular-4.4.11",
+    "@angular/core": "npm:@neverendingsupport/angular-core@4.4.7-angular-4.4.11",
+    "@angular/forms": "npm:@neverendingsupport/angular-forms@4.4.7-angular-4.4.11",
+    "@angular/http": "npm:@neverendingsupport/angular-http@4.4.7-angular-4.4.11",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular-platform-browser@4.4.7-angular-4.4.11",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular-platform-browser-dynamic@4.4.7-angular-4.4.11",
+    "@angular/platform-server": "npm:@neverendingsupport/angular-platform-server@4.4.7-angular-4.4.11",
+    "@angular/platform-webworker": "npm:@neverendingsupport/angular-platform-webworker@4.4.7-angular-4.4.11",
+    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular-platform-browser-dynamic@4.4.7-angular-4.4.11",
+    "@angular/router": "npm:@neverendingsupport/angular-router@4.4.7-angular-4.4.11",
+    "@angular/upgrade": "npm:@neverendingsupport/angular-upgrade@4.4.7-angular-4.4.11",
     "core-js": "^2.5.1",
     "rxjs": "^5.5.2",
     "showdown": "^2.1.0",
@@ -40,9 +40,9 @@
   },
   "devDependencies": {
     "@angular/cli": "1.4.10",
-    "@angular/compiler-cli": "npm:@neverendingsupport/angular@4.4.7-compiler-cli-4.4.10",
-    "@angular/language-service": "npm:@neverendingsupport/angular@4.4.7-language-service-4.4.10",
-    "@angular/tsc-wrapped": "npm:@neverendingsupport/angular@4.4.7-tsc-wrapped-4.4.10",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular-compiler-cli@4.4.7-angular-4.4.11",
+    "@angular/language-service": "npm:@neverendingsupport/angular-language-service@4.4.7-angular-4.4.11",
+    "@angular/tsc-wrapped": "npm:@neverendingsupport/angular-tsc-wrapped@4.4.7-angular-4.4.11",
     "@types/jasmine": "^2.5.53",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.2.0",
@@ -60,53 +60,21 @@
     "typescript": "~2.3.3"
   },
   "overrides": {
-    "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-animations-4.4.10"
-    },
-    "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-common-4.4.10"
-    },
-    "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-compiler-4.4.10"
-    },
-    "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-compiler-cli-4.4.10"
-    },
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-core-4.4.10"
-    },
-    "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-forms-4.4.10"
-    },
-    "@angular/http": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-http-4.4.10"
-    },
-    "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-language-service-4.4.10"
-    },
-    "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-platform-browser-4.4.10"
-    },
-    "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-platform-browser-dynamic-4.4.10"
-    },
-    "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-platform-server-4.4.10"
-    },
-    "@angular/platform-webworker": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-platform-webworker-4.4.10"
-    },
-    "@angular/platform-webworker-dynamic": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-platform-webworker-dynamic-4.4.10"
-    },
-    "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-router-4.4.10"
-    },
-    "@angular/tsc-wrapped": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-tsc-wrapped-4.4.10"
-    },
-    "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@4.4.7-upgrade-4.4.10"
-    }
+    "@angular/animations": { ".": "npm:@neverendingsupport/angular-animations@4.4.7-angular-4.4.11" },
+    "@angular/common": { ".": "npm:@neverendingsupport/angular-common@4.4.7-angular-4.4.11" },
+    "@angular/compiler": { ".": "npm:@neverendingsupport/angular-compiler@4.4.7-angular-4.4.11" },
+    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular-compiler-cli@4.4.7-angular-4.4.11" },
+    "@angular/core": { ".": "npm:@neverendingsupport/angular-core@4.4.7-angular-4.4.11" },
+    "@angular/forms": { ".": "npm:@neverendingsupport/angular-forms@4.4.7-angular-4.4.11" },
+    "@angular/http": { ".": "npm:@neverendingsupport/angular-http@4.4.7-angular-4.4.11" },
+    "@angular/language-service": { ".": "npm:@neverendingsupport/angular-language-service@4.4.7-angular-4.4.11" },
+    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular-platform-browser@4.4.7-angular-4.4.11" },
+    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular-platform-browser-dynamic@4.4.7-angular-4.4.11" },
+    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular-platform-server@4.4.7-angular-4.4.11" },
+    "@angular/platform-webworker": { ".": "npm:@neverendingsupport/angular-platform-webworker@4.4.7-angular-4.4.11" },
+    "@angular/platform-webworker-dynamic": { ".": "npm:@neverendingsupport/angular-platform-webworker-dynamic@4.4.7-angular-4.4.11" },
+    "@angular/router": { ".": "npm:@neverendingsupport/angular-router@4.4.7-angular-4.4.11" },
+    "@angular/tsc-wrapped": { ".": "npm:@neverendingsupport/angular-tsc-wrapped@4.4.7-angular-4.4.11" },
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular-upgrade@4.4.7-angular-4.4.11" }
   }
 }
