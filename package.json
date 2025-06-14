@@ -20,20 +20,20 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "npm:@neverendingsupport/angular@5.2.11-animations-5.2.14",
-    "@angular/common": "npm:@neverendingsupport/angular@5.2.11-common-5.2.14",
-    "@angular/compiler": "npm:@neverendingsupport/angular@5.2.11-compiler-5.2.14",
-    "@angular/core": "npm:@neverendingsupport/angular@5.2.11-core-5.2.14",
-    "@angular/forms": "npm:@neverendingsupport/angular@5.2.11-forms-5.2.14",
-    "@angular/http": "npm:@neverendingsupport/angular@5.2.11-http-5.2.14",
-    "@angular/platform-browser": "npm:@neverendingsupport/angular@5.2.11-platform-browser-5.2.14",
-    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular@5.2.11-platform-browser-dynamic-5.2.14",
-    "@angular/platform-server": "npm:@neverendingsupport/angular@5.2.11-platform-server-5.2.14",
-    "@angular/platform-webworker": "npm:@neverendingsupport/angular@5.2.11-platform-webworker-5.2.14",
-    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular@5.2.11-platform-webworker-dynamic-5.2.14",
-    "@angular/router": "npm:@neverendingsupport/angular@5.2.11-router-5.2.14",
-    "@angular/service-worker": "npm:@neverendingsupport/angular@5.2.11-service-worker-5.2.14",
-    "@angular/upgrade": "npm:@neverendingsupport/angular@5.2.11-upgrade-5.2.14",
+    "@angular/animations": "npm:@neverendingsupport/angular-animations@5.2.11-angular-5.2.15",
+    "@angular/common": "npm:@neverendingsupport/angular-common@5.2.11-angular-5.2.15",
+    "@angular/compiler": "npm:@neverendingsupport/angular-compiler@5.2.11-angular-5.2.15",
+    "@angular/core": "npm:@neverendingsupport/angular-core@5.2.11-angular-5.2.15",
+    "@angular/forms": "npm:@neverendingsupport/angular-forms@5.2.11-angular-5.2.15",
+    "@angular/http": "npm:@neverendingsupport/angular-http@5.2.11-angular-5.2.15",
+    "@angular/platform-browser": "npm:@neverendingsupport/angular-platform-browser@5.2.11-angular-5.2.15",
+    "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular-platform-browser-dynamic@5.2.11-angular-5.2.15",
+    "@angular/platform-server": "npm:@neverendingsupport/angular-platform-server@5.2.11-angular-5.2.15",
+    "@angular/platform-webworker": "npm:@neverendingsupport/angular-platform-webworker@5.2.11-angular-5.2.15",
+    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular-platform-webworker-dynamic@5.2.11-angular-5.2.15",
+    "@angular/router": "npm:@neverendingsupport/angular-router@5.2.11-angular-5.2.15",
+    "@angular/service-worker": "npm:@neverendingsupport/angular-service-worker@5.2.11-angular-5.2.15",
+    "@angular/upgrade": "npm:@neverendingsupport/angular-upgrade@5.2.11-angular-5.2.15",
     "core-js": "^2.5.1",
     "marked": "0.4.0",
     "rxjs": "~5.5.6",
@@ -42,8 +42,8 @@
   },
   "devDependencies": {
     "@angular/cli": "1.7.4",
-    "@angular/compiler-cli": "npm:@neverendingsupport/angular@5.2.11-compiler-cli-5.2.14",
-    "@angular/language-service": "npm:@neverendingsupport/angular@5.2.11-language-service-5.2.14",
+    "@angular/compiler-cli": "npm:@neverendingsupport/angular-compiler-cli@5.2.11-angular-5.2.15",
+    "@angular/language-service": "npm:@neverendingsupport/angular-language-service@5.2.11-angular-5.2.15",
     "@types/jasmine": "2.8.6",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "^8.9.4",
@@ -62,53 +62,21 @@
     "typescript": "~2.6.2"
   },
   "overrides": {
-    "@angular/animations": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-animations-5.2.14"
-    },
-    "@angular/common": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-common-5.2.14"
-    },
-    "@angular/compiler": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-compiler-5.2.14"
-    },
-    "@angular/compiler-cli": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-compiler-cli-5.2.14"
-    },
-    "@angular/core": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-core-5.2.14"
-    },
-    "@angular/forms": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-forms-5.2.14"
-    },
-    "@angular/http": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-http-5.2.14"
-    },
-    "@angular/language-service": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-language-service-5.2.14"
-    },
-    "@angular/platform-browser": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-platform-browser-5.2.14"
-    },
-    "@angular/platform-browser-dynamic": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-platform-browser-dynamic-5.2.14"
-    },
-    "@angular/platform-server": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-platform-server-5.2.14"
-    },
-    "@angular/platform-webworker": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-platform-webworker-5.2.14"
-    },
-    "@angular/platform-webworker-dynamic": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-platform-webworker-dynamic-5.2.14"
-    },
-    "@angular/router": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-router-5.2.14"
-    },
-    "@angular/service-worker": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-service-worker-5.2.14"
-    },
-    "@angular/upgrade": {
-      ".": "npm:@neverendingsupport/angular@5.2.11-upgrade-5.2.14"
-    }
+    "@angular/animations": { ".": "npm:@neverendingsupport/angular-animations@5.2.11-angular-5.2.15" },
+    "@angular/common": { ".": "npm:@neverendingsupport/angular-common@5.2.11-angular-5.2.15" },
+    "@angular/compiler": { ".": "npm:@neverendingsupport/angular-compiler@5.2.11-angular-5.2.15" },
+    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular-compiler-cli@5.2.11-angular-5.2.15" },
+    "@angular/core": { ".": "npm:@neverendingsupport/angular-core@5.2.11-angular-5.2.15" },
+    "@angular/forms": { ".": "npm:@neverendingsupport/angular-forms@5.2.11-angular-5.2.15" },
+    "@angular/http": { ".": "npm:@neverendingsupport/angular-http@5.2.11-angular-5.2.15" },
+    "@angular/language-service": { ".": "npm:@neverendingsupport/angular-language-service@5.2.11-angular-5.2.15" },
+    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular-platform-browser@5.2.11-angular-5.2.15" },
+    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular-platform-browser-dynamic@5.2.11-angular-5.2.15" },
+    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular-platform-server@5.2.11-angular-5.2.15" },
+    "@angular/platform-webworker": { ".": "npm:@neverendingsupport/angular-platform-webworker@5.2.11-angular-5.2.15" },
+    "@angular/platform-webworker-dynamic": { ".": "npm:@neverendingsupport/angular-platform-webworker-dynamic@5.2.11-angular-5.2.15" },
+    "@angular/router": { ".": "npm:@neverendingsupport/angular-router@5.2.11-angular-5.2.15" },
+    "@angular/service-worker": { ".": "npm:@neverendingsupport/angular-service-worker@5.2.11-angular-5.2.15" },
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular-upgrade@5.2.11-angular-5.2.15" }
   }
 }
