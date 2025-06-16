@@ -40,7 +40,7 @@
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
     "tslib": "^2.0.0",
-    "zone.js": "npm:@neverendingsupport/angular-zone.js@0.11.2-angular-10.2.12"
+    "zone.js": "npm:@neverendingsupport/zone.js@0.11.2-angular-10.2.12"
   },
   "devDependencies": {
     "@neverendingsupport/angular-tools": "1.1.4",
@@ -94,7 +94,7 @@
     "@angular/router": { ".": "npm:@neverendingsupport/angular-router@10.2.5-angular-10.2.12" },
     "@angular/service-worker": { ".": "npm:@neverendingsupport/angular-service-worker@10.2.5-angular-10.2.12" },
     "@angular/upgrade": { ".": "npm:@neverendingsupport/angular-upgrade@10.2.5-angular-10.2.12" },
-    "zone.js": { ".": "npm:@neverendingsupport/angular-zone.js@0.11.2-angular-10.2.12" },
+    "zone.js": { ".": "npm:@neverendingsupport/zone.js@0.11.2-angular-10.2.12" },
     "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@10.2.4-angular-cli-10.2.7" },
     "@angular/pwa": { ".": "npm:@neverendingsupport/angular-pwa@0.1002.4-angular-cli-10.2.7" },
     "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-devkit-architect@0.1002.4-angular-cli-10.2.7" },
