@@ -31,6 +31,13 @@
     "@angular/router": "npm:@neverendingsupport/angular-router@15.2.10-angular-15.2.15",
     "@angular/service-worker": "npm:@neverendingsupport/angular-service-worker@15.2.10-angular-15.2.15",
     "@angular/upgrade": "npm:@neverendingsupport/angular-upgrade@15.2.10-angular-15.2.15",
+    "@angular/cdk": "npm:@neverendingsupport/angular-cdk@15.2.9-components-15.2.10",
+    "@angular/google-maps": "npm:@neverendingsupport/angular-google-maps@15.2.9-components-15.2.10",
+    "@angular/material": "npm:@neverendingsupport/angular-material@15.2.9-components-15.2.10",
+    "@angular/material-date-fns-adapter": "npm:@neverendingsupport/angular-material-date-fns-adapter@15.2.9-components-15.2.10",
+    "@angular/material-luxon-adapter": "npm:@neverendingsupport/angular-material-luxon-adapter@15.2.9-components-15.2.10",
+    "@angular/material-moment-adapter": "npm:@neverendingsupport/angular-material-moment-adapter@15.2.9-components-15.2.10",
+    "@angular/youtube-player": "npm:@neverendingsupport/angular-youtube-player@15.2.9-components-15.2.10",
     "core-js": "^2.4.1",
     "marked": "^4.2.12",
     "rxjs": "^6.4.0",
@@ -96,6 +103,13 @@
     "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-devkit-core@15.2.11-angular-cli-15.2.13" },
     "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-devkit-schematics@15.2.11-angular-cli-15.2.13" },
     "@angular-devkit/schematics-cli": { ".": "npm:@neverendingsupport/angular-devkit-schematics-cli@15.2.11-angular-cli-15.2.13" },
-    "@ngtools/webpack": { ".": "npm:@neverendingsupport/ngtools-webpack@15.2.11-angular-cli-15.2.13" }
+    "@ngtools/webpack": { ".": "npm:@neverendingsupport/ngtools-webpack@15.2.11-angular-cli-15.2.13" },
+    "@angular/cdk": { ".": "npm:@neverendingsupport/angular-cdk@15.2.9-components-15.2.10" },
+    "@angular/google-maps": { ".": "npm:@neverendingsupport/angular-google-maps@15.2.9-components-15.2.10" },
+    "@angular/material": { ".": "npm:@neverendingsupport/angular-material@15.2.9-components-15.2.10" },
+    "@angular/material-date-fns-adapter": { ".": "npm:@neverendingsupport/angular-material-date-fns-adapter@15.2.9-components-15.2.10" },
+    "@angular/material-luxon-adapter": { ".": "npm:@neverendingsupport/angular-material-luxon-adapter@15.2.9-components-15.2.10" },
+    "@angular/material-moment-adapter": { ".": "npm:@neverendingsupport/angular-material-moment-adapter@15.2.9-components-15.2.10" },
+    "@angular/youtube-player": { ".": "npm:@neverendingsupport/angular-youtube-player@15.2.9-components-15.2.10" }
   }
 }
