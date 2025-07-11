@@ -23,7 +23,8 @@ jobs:
             angular-v14-nes-trial,
             angular-v15-nes-trial,
             angular-v16-nes-trial,
-            angular-v17-nes-trial
+            angular-v17-nes-trial,
+            angular-v18-nes-trial
           ]
         fail-fast: false # Allows all matrix jobs to run to completion
     steps:
