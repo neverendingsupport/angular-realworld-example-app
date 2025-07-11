@@ -37,8 +37,19 @@
     "zone.js": "~0.14.0"
   },
   "devDependencies": {
-    "@angular/cli": "18.2.20",
-    "@angular-devkit/build-angular": "18.2.20",
+    "@angular/build": "npm:@neverendingsupport/angular-cli@18.2.20-trial-build",
+    "@angular/cli": "npm:@neverendingsupport/angular-cli@18.2.20-trial-cli",
+    "@angular/create": "npm:@neverendingsupport/angular-cli@18.2.20-trial-create",
+    "@angular/pwa": "npm:@neverendingsupport/angular-cli@18.2.20-trial-pwa",
+    "@angular/ssr": "npm:@neverendingsupport/angular-cli@18.2.20-trial-ssr",
+    "@angular-devkit/architect": "npm:@neverendingsupport/angular-cli@0.1802.20-trial-architect",
+    "@angular-devkit/architect-cli": "npm:@neverendingsupport/angular-cli@0.1802.20-trial-architect-cli",
+    "@angular-devkit/build-angular": "npm:@neverendingsupport/angular-cli@18.2.20-trial-build-angular",
+    "@angular-devkit/build-webpack": "npm:@neverendingsupport/angular-cli@0.1802.20-trial-build-webpack",
+    "@angular-devkit/core": "npm:@neverendingsupport/angular-cli@18.2.20-trial-core",
+    "@angular-devkit/schematics": "npm:@neverendingsupport/angular-cli@18.2.20-trial-schematics",
+    "@angular-devkit/schematics-cli": "npm:@neverendingsupport/angular-cli@18.2.20-trial-schematics-cli",
+    "@ngtools/webpack": "npm:@neverendingsupport/angular-cli@18.2.20-trial-webpack",
     "@angular/compiler-cli": "npm:@neverendingsupport/angular@18.2.13-trial-compiler-cli",
     "@angular/language-service": "npm:@neverendingsupport/angular@18.2.13-trial-language-service",
     "@types/jasmine": "~4.3.0",
@@ -69,6 +80,20 @@
     "@angular/platform-server": { ".": "npm:@neverendingsupport/angular@18.2.13-trial-platform-server" },
     "@angular/router": { ".": "npm:@neverendingsupport/angular@18.2.13-trial-router" },
     "@angular/service-worker": { ".": "npm:@neverendingsupport/angular@18.2.13-trial-service-worker" },
-    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@18.2.13-trial-upgrade" }
+    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular@18.2.13-trial-upgrade" },
+    "@angular/build": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-build" },
+    "@angular/cli": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-cli" },
+    "@angular/create": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-create" },
+    "@angular/pwa": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-pwa" },
+    "@angular/ssr": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-ssr" },
+    "@angular-devkit/architect": { ".": "npm:@neverendingsupport/angular-cli@0.1802.20-trial-architect" },
+    "@angular-devkit/architect-cli": { ".": "npm:@neverendingsupport/angular-cli@0.1802.20-trial-architect-cli" },
+    "@angular-devkit/build-angular": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-build-angular" },
+    "@angular-devkit/build-webpack": { ".": "npm:@neverendingsupport/angular-cli@0.1802.20-trial-build-webpack" },
+    "@angular-devkit/core": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-core" },
+    "@angular-devkit/schematics": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-schematics" },
+    "@angular-devkit/schematics-cli": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-schematics-cli" },
+    "@ngtools/webpack": { ".": "npm:@neverendingsupport/angular-cli@18.2.20-trial-webpack"
+    }
   }
 }
