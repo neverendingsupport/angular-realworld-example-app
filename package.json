@@ -52,7 +52,7 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
-    "typescript": "~5.2.2"
+    "typescript": "^5.4.0"
   },
   "overrides": {
     "@angular/animations": { ".": "npm:@neverendingsupport/angular-animations@18.2.13-angular-18.2.14" },
