@@ -13,6 +13,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN sed -i 's/deb.debian.org/archive.debian.org/g' /etc/apt/sources.list && \
     sed -i 's|security.debian.org|archive.debian.org/debian-security|g' /etc/apt/sources.list && \
     sed -i 's|archive.debian.org/debian-security/debian-security|archive.debian.org/debian-security|g' /etc/apt/sources.list && \
+    apt-get update \
     && apt-get install -y curl \
     && apt-get -y autoclean
 
