@@ -1,6 +1,6 @@
 # Stage 1: Build the Angular application
 # Use an official Node.js image that satisfies the version requirement
-FROM node:20.18.3 as build
+FROM node:20.20.0 as build
 
 # Set the working directory in the container
 WORKDIR /app

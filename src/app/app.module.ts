@@ -18,13 +18,13 @@ export function initAuth(jwtService: JwtService, userService: UserService) {
 }
 
 @NgModule({
-  declarations: [AppComponent],
   imports: [
     BrowserModule,
     FooterComponent,
     HeaderComponent,
     AppRoutingModule,
     HttpClientModule,
+    AppComponent,
   ],
   providers: [
     {

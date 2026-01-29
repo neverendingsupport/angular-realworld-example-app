@@ -2,7 +2,7 @@ import { Component, inject, OnDestroy, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { TagsService } from "../../core/services/tags.service";
 import { ArticleListConfig } from "../../core/models/article-list-config.model";
-import { AsyncPipe, NgClass, NgForOf } from "@angular/common";
+import { NgClass, NgForOf } from "@angular/common";
 import { ArticleListComponent } from "../../shared/article-helpers/article-list.component";
 import { takeUntil, tap } from "rxjs/operators";
 import { Subject } from "rxjs";
@@ -17,7 +17,6 @@ import { ShowAuthedDirective } from "../../shared/show-authed.directive";
   imports: [
     NgClass,
     ArticleListComponent,
-    AsyncPipe,
     RxLet,
     NgForOf,
     ShowAuthedDirective,
