@@ -9,6 +9,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint --force",
+    "clean": "rm -rf node_modules dist package-lock.json .angular/cache coverage out-tsc tmp",
     "prepare": "husky install"
   },
   "engines": {
