@@ -24,7 +24,11 @@ jobs:
       run: echo "Branch input ${{ inputs.branch }}"
 
     - name: Set image name
-      run: echo "IMAGE_NAME=${{ inputs.branch }}" >> $GITHUB_ENV
+      # Docker image tags and container names reject '/', so branch names
+      # like 'ee/my-branch' must be sanitized before use.
+      run: |
+        BRANCH="${{ inputs.branch }}"
+        echo "IMAGE_NAME=${BRANCH//\//-}" >> $GITHUB_ENV
 
     - name: Build the Docker image
       run: |
