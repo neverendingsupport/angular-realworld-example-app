@@ -10,7 +10,8 @@
     "build-prod": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint --force",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "clean": "rm -rf node_modules dist package-lock.json .angular/cache coverage out-tsc tmp"
   },
   "pre-commit": [
     "lint"
@@ -30,7 +31,7 @@
     "@angular/platform-browser-dynamic": "npm:@neverendingsupport/angular-platform-browser-dynamic@4.4.7-angular-4.4.14",
     "@angular/platform-server": "npm:@neverendingsupport/angular-platform-server@4.4.7-angular-4.4.14",
     "@angular/platform-webworker": "npm:@neverendingsupport/angular-platform-webworker@4.4.7-angular-4.4.14",
-    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular-platform-browser-dynamic@4.4.7-angular-4.4.14",
+    "@angular/platform-webworker-dynamic": "npm:@neverendingsupport/angular-platform-webworker-dynamic@4.4.7-angular-4.4.14",
     "@angular/router": "npm:@neverendingsupport/angular-router@4.4.7-angular-4.4.14",
     "@angular/upgrade": "npm:@neverendingsupport/angular-upgrade@4.4.7-angular-4.4.14",
     "core-js": "^2.5.1",
@@ -60,21 +61,54 @@
     "typescript": "~2.3.3"
   },
   "overrides": {
-    "@angular/animations": { ".": "npm:@neverendingsupport/angular-animations@4.4.7-angular-4.4.14" },
-    "@angular/common": { ".": "npm:@neverendingsupport/angular-common@4.4.7-angular-4.4.14" },
-    "@angular/compiler": { ".": "npm:@neverendingsupport/angular-compiler@4.4.7-angular-4.4.14" },
-    "@angular/compiler-cli": { ".": "npm:@neverendingsupport/angular-compiler-cli@4.4.7-angular-4.4.14" },
-    "@angular/core": { ".": "npm:@neverendingsupport/angular-core@4.4.7-angular-4.4.14" },
-    "@angular/forms": { ".": "npm:@neverendingsupport/angular-forms@4.4.7-angular-4.4.14" },
-    "@angular/http": { ".": "npm:@neverendingsupport/angular-http@4.4.7-angular-4.4.14" },
-    "@angular/language-service": { ".": "npm:@neverendingsupport/angular-language-service@4.4.7-angular-4.4.14" },
-    "@angular/platform-browser": { ".": "npm:@neverendingsupport/angular-platform-browser@4.4.7-angular-4.4.14" },
-    "@angular/platform-browser-dynamic": { ".": "npm:@neverendingsupport/angular-platform-browser-dynamic@4.4.7-angular-4.4.14" },
-    "@angular/platform-server": { ".": "npm:@neverendingsupport/angular-platform-server@4.4.7-angular-4.4.14" },
-    "@angular/platform-webworker": { ".": "npm:@neverendingsupport/angular-platform-webworker@4.4.7-angular-4.4.14" },
-    "@angular/platform-webworker-dynamic": { ".": "npm:@neverendingsupport/angular-platform-webworker-dynamic@4.4.7-angular-4.4.14" },
-    "@angular/router": { ".": "npm:@neverendingsupport/angular-router@4.4.7-angular-4.4.14" },
-    "@angular/tsc-wrapped": { ".": "npm:@neverendingsupport/angular-tsc-wrapped@4.4.7-angular-4.4.14" },
-    "@angular/upgrade": { ".": "npm:@neverendingsupport/angular-upgrade@4.4.7-angular-4.4.14" }
+    "@angular/animations": {
+      ".": "npm:@neverendingsupport/angular-animations@4.4.7-angular-4.4.14"
+    },
+    "@angular/common": {
+      ".": "npm:@neverendingsupport/angular-common@4.4.7-angular-4.4.14"
+    },
+    "@angular/compiler": {
+      ".": "npm:@neverendingsupport/angular-compiler@4.4.7-angular-4.4.14"
+    },
+    "@angular/compiler-cli": {
+      ".": "npm:@neverendingsupport/angular-compiler-cli@4.4.7-angular-4.4.14"
+    },
+    "@angular/core": {
+      ".": "npm:@neverendingsupport/angular-core@4.4.7-angular-4.4.14"
+    },
+    "@angular/forms": {
+      ".": "npm:@neverendingsupport/angular-forms@4.4.7-angular-4.4.14"
+    },
+    "@angular/http": {
+      ".": "npm:@neverendingsupport/angular-http@4.4.7-angular-4.4.14"
+    },
+    "@angular/language-service": {
+      ".": "npm:@neverendingsupport/angular-language-service@4.4.7-angular-4.4.14"
+    },
+    "@angular/platform-browser": {
+      ".": "npm:@neverendingsupport/angular-platform-browser@4.4.7-angular-4.4.14"
+    },
+    "@angular/platform-browser-dynamic": {
+      ".": "npm:@neverendingsupport/angular-platform-browser-dynamic@4.4.7-angular-4.4.14"
+    },
+    "@angular/platform-server": {
+      ".": "npm:@neverendingsupport/angular-platform-server@4.4.7-angular-4.4.14"
+    },
+    "@angular/platform-webworker": {
+      ".": "npm:@neverendingsupport/angular-platform-webworker@4.4.7-angular-4.4.14"
+    },
+    "@angular/platform-webworker-dynamic": {
+      ".": "npm:@neverendingsupport/angular-platform-webworker-dynamic@4.4.7-angular-4.4.14"
+    },
+    "@angular/router": {
+      ".": "npm:@neverendingsupport/angular-router@4.4.7-angular-4.4.14"
+    },
+    "@angular/tsc-wrapped": {
+      ".": "npm:@neverendingsupport/angular-tsc-wrapped@4.4.7-angular-4.4.14"
+    },
+    "@angular/upgrade": {
+      ".": "npm:@neverendingsupport/angular-upgrade@4.4.7-angular-4.4.14"
+    },
+    "node-sass": "^9.0.0"
   }
 }
