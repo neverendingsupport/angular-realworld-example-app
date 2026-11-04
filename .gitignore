@@ -36,6 +36,7 @@ testem.log
 /typings
 yarn-error.log
 .npmrc
+.nvmrc
 .angular
 package-lock.json
 
