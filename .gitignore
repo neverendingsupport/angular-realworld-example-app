@@ -37,6 +37,7 @@ testem.log
 yarn-error.log
 .npmrc
 package-lock.json
+.nvmrc
 
 # e2e
 /e2e/*.js
