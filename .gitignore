@@ -35,6 +35,7 @@ testem.log
 /typings
 yarn-error.log
 .npmrc
+.nvmrc
 package-lock.json
 
 # e2e
